@@ -51,7 +51,7 @@ experience:
       - "Created Event Driven Architectures using AWS Lambdas, SQS, EventBridge and StepFunctions."
     tags: ["AWS", "Terraform", "Jenkins", "GitHub Actions", "SonarQube", "OWASP ZAP", "Lambda", "EventBridge"]
 
-  - position: "Security Manager (Part-time Consultant)"
+  - position: "Security Manager"
     company: "K2"
     location: "Bogotá, Colombia"
     period: "October 2023 – February 2025"
@@ -93,6 +93,87 @@ experience:
       - "Automated compliance checks using AWS Config and custom scripts in Python."
       - "Defined and implemented security policies, integrating them with existing DevOps pipelines for continuous security assurance."
     tags: ["AWS", "Azure", "Penetration Testing", "Python", "AWS Config", "Security Policies"]
+
+  - position: "Security Analyst I"
+    company: "Teleperformance"
+    location: "Bogotá, Colombia"
+    period: "March 2022 – August 2022"
+    duration: "6 mo"
+    is_current: false
+    bullets:
+      - "Designed and deployed secure CI/CD pipelines using Jenkins, integrating automated security tests."
+      - "Conducted security analysis of project architecture, ensuring compliance with best practices."
+      - "Automated application security testing using tools like OWASP ZAP and Burp Suite."
+      - "Implemented SecDevOps processes, combining security and DevOps for streamlined workflows."
+    tags: ["Jenkins", "OWASP ZAP", "Burp Suite", "CI/CD", "SecDevOps"]
+
+  - position: "Ethical Hacker Senior"
+    company: "AntiFraude CyberSecurity & Privacy Services LLC"
+    location: "Bogotá, Colombia"
+    period: "August 2021 – March 2022"
+    duration: "8 mo"
+    is_current: false
+    bullets:
+      - "Performed white box testing for web applications and cloud environments, identifying vulnerabilities in production systems."
+      - "Conducted OAST testing and ethical hacking assessments for AWS and on-prem infrastructures."
+      - "Supported the SecDevOps process by integrating vulnerability scanning tools into CI/CD pipelines."
+    tags: ["White Box Testing", "OAST", "Ethical Hacking", "AWS", "SecDevOps"]
+
+  - position: "Chief Information Security Officer"
+    company: "IMEXHS"
+    location: "Bogotá, Colombia"
+    period: "June 2021 – August 2021"
+    duration: "3 mo"
+    is_current: false
+    bullets:
+      - "Secured cloud platforms (AWS, Azure) by configuring policies and implementing best practices."
+      - "Reduced infrastructure costs through resource optimization and effective budget planning."
+      - "Conducted ethical hacking tests on patient and doctor portals, ensuring data integrity and compliance."
+    tags: ["AWS", "Azure", "CISO", "Budget Planning", "Cost Optimization"]
+
+  - position: "BlueTeam Engineer"
+    company: "TIVIT"
+    location: "Bogotá, Colombia"
+    period: "February 2021 – May 2021"
+    duration: "4 mo"
+    is_current: false
+    bullets:
+      - "Secured mission-critical assets through vulnerability analysis and ethical hacking on Azure environments."
+      - "Configured and maintained IaaS platforms, ensuring system reliability and uptime."
+    tags: ["Blue Team", "Vulnerability Analysis", "Azure", "IaaS", "System Reliability"]
+
+  - position: "Infrastructure Manager"
+    company: "Smart Taxi"
+    location: "Bogotá, Colombia"
+    period: "October 2020 – February 2021"
+    duration: "5 mo"
+    is_current: false
+    bullets:
+      - "Managed AWS infrastructure, configuring and maintaining servers and network components."
+      - "Conducted cost optimization and implemented security enhancements to reduce operational expenses."
+    tags: ["AWS", "Infrastructure Management", "Cost Optimization", "Security Enhancements"]
+
+  - position: "Cybersecurity Administrator"
+    company: "TIVIT"
+    location: "Bogotá, Colombia"
+    period: "November 2019 – September 2020"
+    duration: "11 mo"
+    is_current: false
+    bullets:
+      - "Automated tasks using Python, Bash, and PowerShell, increasing operational efficiency."
+      - "Managed vulnerability scanning tools like Tenable Nessus, Qualys, and Acunetix for security assurance."
+    tags: ["Python", "Bash", "PowerShell", "Vulnerability Scanning", "Nessus", "Qualys"]
+
+  - position: "SOC Analyst"
+    company: "TECNIHARDWARE"
+    location: "Barranquilla, Colombia"
+    period: "January 2017 – August 2018"
+    duration: "1 yr 8 mo"
+    is_current: false
+    bullets:
+      - "Implemented and maintained Windows and Linux servers, supporting critical business operations."
+      - "Responded to security incidents and escalated them to higher-level analysts as needed."
+    tags: ["SOC", "Security Incidents", "Linux", "Windows Server", "Monitoring"]
 
 education:
   - school: "Fundación Universitaria del Area Andina"
