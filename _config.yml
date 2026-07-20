@@ -3,6 +3,8 @@ title: "Rachid Moyse Polania — DevSecOps & Platform Engineer Console"
 description: "Professional portfolio and system status operator dashboard for Rachid Moyse Polania."
 url: "https://rachidmoysepolania.github.io"
 baseurl: ""
+formspree_id: "meeyknpk" # Formspree Form ID for contact form submissions
+
 
 # Personal Information
 author:
