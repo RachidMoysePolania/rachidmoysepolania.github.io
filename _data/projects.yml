@@ -22,53 +22,133 @@
   github: "#"
   tags: ["Kubernetes", "ArgoCD", "Helm", "Trivy", "AWS EKS"]
 
-- title: "AWS Solutions Architect - Associate"
+- title: "HashiCorp Certified: Terraform Associate (003)"
+  description: "Validates basic concepts, skills, and use cases associated with open source HashiCorp Terraform."
+  category: "certifications"
+  image: "/assets/images/certs/terraform_associate.png"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["Terraform", "IaC", "HashiCorp"]
+
+- title: "AWS Certified Solutions Architect – Associate"
   description: "AWS Associate level certification validating key abilities to architect secure, resilient and high-performing systems."
   category: "certifications"
   image: "/assets/images/certs/aws_saa.png"
-  website: "#"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
   github: "#"
   tags: ["AWS", "Solutions Architect", "Associate"]
 
-- title: "Certified Kubernetes Administrator (CKA)"
-  description: "Validates the skills to install, configure, manage and troubleshoot production-grade Kubernetes container clusters."
+- title: "LFC102: Inclusive Open Source Community Orientation"
+  description: "Linux Foundation LFC102 certification validating open source community development, communication dynamics, and collaboration best practices."
   category: "certifications"
-  image: "/assets/images/certs/cka.png"
-  website: "#"
+  image: "/assets/images/certs/inclusive_open_source.png"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
   github: "#"
-  tags: ["Kubernetes", "CKA", "Containers"]
-
-- title: "Microsoft Azure Security Engineer Associate"
-  description: "Validates security capabilities on Microsoft Azure: managing identity, securing data, applications, and networks."
-  category: "certifications"
-  image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop"
-  website: "#"
-  github: "#"
-  tags: ["Azure", "AZ-500", "Security Engineer"]
-
-- title: "HashiCorp Certified: Terraform Associate"
-  description: "Validates knowledge of infrastructure-as-code automation and Terraform operations."
-  category: "certifications"
-  image: "/assets/images/certs/terraform_associate.png"
-  website: "#"
-  github: "#"
-  tags: ["Terraform", "IaC", "HashiCorp"]
+  tags: ["Linux Foundation", "LFC102", "Open Source"]
 
 - title: "FinOps Certified Engineer"
   description: "Validates cloud financial management standards and cloud cost optimization principles."
   category: "certifications"
   image: "/assets/images/certs/finops_engineer.png"
-  website: "#"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
   github: "#"
   tags: ["FinOps", "Cloud Cost Optimization"]
 
-- title: "Inclusive Open Source Community Orientation"
-  description: "Linux Foundation LFC102 certification validating open source community development, communication dynamics, and collaboration best practices."
+- title: "AWS Educate Getting Started with Security"
+  description: "Training badge for foundational AWS cloud security capabilities and architecture principles."
   category: "certifications"
-  image: "/assets/images/certs/inclusive_open_source.png"
-  website: "#"
+  image: "https://images.credly.com/images/fc6fa322-80f4-45a5-9def-91e9bcfde837/blob"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
   github: "#"
-  tags: ["Linux Foundation", "LFC102", "Open Source"]
+  tags: ["AWS", "Cloud Security", "Training"]
+
+- title: "AWS Educate Getting Started with Cloud Ops"
+  description: "Training badge for foundational AWS Cloud Operations and sysops management."
+  category: "certifications"
+  image: "https://images.credly.com/images/4251ab91-6d67-47da-801c-855c0bbc6cc3/blob"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["AWS", "Cloud Ops", "Training"]
+
+- title: "LFS256: DevOps and Workflow Management with Argo"
+  description: "Linux Foundation LFS256 course credential validating workflow automation and CI/CD pipelines with ArgoCD."
+  category: "certifications"
+  image: "https://images.credly.com/images/dec28796-b4df-40e3-87f7-bdbcf02c3d2c/blob"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["ArgoCD", "GitOps", "Workflow"]
+
+- title: "CKA: Certified Kubernetes Administrator"
+  description: "Validates the skills to install, configure, manage and troubleshoot production-grade Kubernetes container clusters."
+  category: "certifications"
+  image: "/assets/images/certs/cka.png"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["Kubernetes", "CKA", "Containers"]
+
+- title: "AWS Certified Cloud Practitioner"
+  description: "Foundational AWS certification validating overall understanding of the AWS Cloud platform."
+  category: "certifications"
+  image: "https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["AWS", "Cloud Practitioner", "Foundational"]
+
+- title: "AWS Partner: Technical Accredited"
+  description: "Technical accreditation validating deep AWS architectures and partner technical guidelines."
+  category: "certifications"
+  image: "https://images.credly.com/images/8f006312-3154-45bf-a845-4a043641e83c/blob"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["AWS", "Partner", "Technical"]
+
+- title: "Cyber Security Foundation Professional Certificate (CSFPC)"
+  description: "Professional certification validating understanding of cybersecurity principles, frameworks, and defense strategies."
+  category: "certifications"
+  image: "https://images.credly.com/images/8a0fb550-4d51-41d0-be50-6c1f54526539/Cybersecurity-Foundation-Professional-Certificate-CSFPC.png"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["Cybersecurity", "CSFPC", "Certiprof"]
+
+- title: "Lifelong Learning"
+  description: "Certiprof validation of continuous learning and professional engineering skill updates."
+  category: "certifications"
+  image: "https://images.credly.com/images/21e16d4d-d2df-46e6-9098-526caab49e63/blob"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["Certiprof", "Lifelong Learning"]
+
+- title: "Scrum Foundation Professional Certification (SFPC)"
+  description: "Validates understanding of Agile methodologies, Scrum frameworks, and team operations."
+  category: "certifications"
+  image: "https://images.credly.com/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["Scrum", "Agile", "SFPC"]
+
+- title: "CompTIA Security+ ce Certification"
+  description: "Global certification validating foundational cybersecurity knowledge and hands-on security skills."
+  category: "certifications"
+  image: "https://images.credly.com/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["CompTIA", "Security+", "Cybersecurity"]
+
+- title: "Microsoft Certified: Azure Security Engineer Associate"
+  description: "Validates security capabilities on Microsoft Azure: managing identity, securing data, applications, and networks."
+  category: "certifications"
+  image: "/assets/images/certs/azure_security_engineer.png"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["Azure", "AZ-500", "Security Engineer"]
+
+- title: "Microsoft Certified: Azure Fundamentals"
+  description: "Validates foundational knowledge of cloud services and how those services are provided with Microsoft Azure."
+  category: "certifications"
+  image: "/assets/images/certs/azure_fundamentals.png"
+  website: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
+  github: "#"
+  tags: ["Azure", "AZ-900", "Fundamentals"]
 
 - title: "Certified Red Team Expert (CRTE)"
   description: "Advanced certification validating professional active directory threat hunting, exploitation, and evasion."
