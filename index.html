@@ -1,0 +1,162 @@
+---
+layout: default
+title: About Me
+---
+<div class="pb-2 reveal">
+  <h1 class="title title--h1 first-title title__separate">About Me<span class="title--tone">.</span></h1>
+</div>
+
+<!-- Story Section -->
+<section id="story" class="reveal">
+  <div>
+    <div class="about-story__intro">◆ Senior DevOps Cloud & SRE · Scale Infrastructure Designer</div>
+    <article class="about-story__body">
+      I am a Platform & Reliability Engineer with 5+ years of experience designing secure, observable, and cost-efficient cloud platforms at scale. 
+      I specialize in leading multi-cloud migrations, establishing Landing Zones, managing large-scale Kubernetes platforms, and optimizing delivery pipelines. 
+      I automate infrastructure through Terraform, Ansible, and GitOps workflows to eliminate operational toil and ensure robust resilience.
+    </article>
+    <p class="about-story__cta">
+      <a href="{{ '/portfolio.html' | relative_url }}" class="about-portfolio-link">See my DevOps Cloud portfolio →</a>
+    </p>
+  </div>
+</section>
+
+<!-- Section Selector Segments -->
+<nav class="seg-control seg-control-nav" role="tablist">
+  <button class="seg-control__seg seg-control__seg--active" role="tab" id="tab-stats" aria-selected="true" onclick="switchAboutTab('stats')">
+    <span class="seg-control__seg-label">STATS</span>
+  </button>
+  <button class="seg-control__seg" role="tab" id="tab-scope" aria-selected="false" onclick="switchAboutTab('scope')">
+    <span class="seg-control__seg-label">SCOPE</span>
+  </button>
+  <button class="seg-control__seg" role="tab" id="tab-clients" aria-selected="false" onclick="switchAboutTab('clients')">
+    <span class="seg-control__seg-label">CLIENTS</span>
+  </button>
+</nav>
+
+<!-- Tab Content: Stats -->
+<section id="sect-stats" class="reveal reveal-delay-2 about-tab-content">
+  <h2 class="section-title">By the Numbers</h2>
+  <div class="stats-grid">
+    <a href="{{ '/resume.html#experience' | relative_url }}" class="stat-card stat-card--link">
+      <span class="stat-card__number">5+</span>
+      <span class="stat-card__label">Years Experience</span>
+    </a>
+    <a href="{{ '/portfolio.html?category=projects' | relative_url }}" class="stat-card stat-card--link">
+      <span class="stat-card__number">10+</span>
+      <span class="stat-card__label">Projects Done</span>
+    </a>
+    <a href="{{ '/resume.html#tools' | relative_url }}" class="stat-card stat-card--link">
+      <span class="stat-card__number">37+</span>
+      <span class="stat-card__label">Technologies</span>
+    </a>
+    <a href="{{ '/portfolio.html?category=certifications' | relative_url }}" class="stat-card stat-card--link">
+      <span class="stat-card__number">4</span>
+      <span class="stat-card__label">Certifications</span>
+    </a>
+  </div>
+</section>
+
+<!-- Tab Content: Scope (Hidden by default, toggled via JS) -->
+<section id="sect-scope" class="reveal reveal-delay-2 about-tab-content" style="display: none;">
+  <h2 class="section-title">What I'm Doing</h2>
+  <div class="about-scope-grid">
+    <div class="about-scope-grid__item">
+      <article class="about-scope-card">
+        <div class="about-scope-card__icon-wrap">
+          <span class="about-scope-card__icon">🛡️</span>
+        </div>
+        <div class="about-scope-card__body">
+          <span class="about-scope-card__type">SECURITY</span>
+          <h3 class="about-scope-card__title">DevSecOps</h3>
+          <p class="about-scope-card__desc">Designing CI/CD pipelines with integrated security — container vulnerability scans, secret leakage protection, and IAM governance compliance.</p>
+        </div>
+      </article>
+    </div>
+    
+    <div class="about-scope-grid__item">
+      <article class="about-scope-card">
+        <div class="about-scope-card__icon-wrap">
+          <span class="about-scope-card__icon">☁️</span>
+        </div>
+        <div class="about-scope-card__body">
+          <span class="about-scope-card__type">CLOUD</span>
+          <h3 class="about-scope-card__title">Cloud Engineering</h3>
+          <p class="about-scope-card__desc">Building landing zones and architecture baselines on AWS and GCP with focus on networking topologies and cost-effective compute nodes.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="about-scope-grid__item">
+      <article class="about-scope-card">
+        <div class="about-scope-card__icon-wrap">
+          <span class="about-scope-card__icon">⚙️</span>
+        </div>
+        <div class="about-scope-card__body">
+          <span class="about-scope-card__type">RELIABILITY</span>
+          <h3 class="about-scope-card__title">SRE</h3>
+          <p class="about-scope-card__desc">Ensuring high-availability (99.9% uptime) for distributed platforms using Kubernetes, autoscaling, and Thanos/Prometheus observability stacks.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="about-scope-grid__item">
+      <article class="about-scope-card">
+        <div class="about-scope-card__icon-wrap">
+          <span class="about-scope-card__icon">🤖</span>
+        </div>
+        <div class="about-scope-card__body">
+          <span class="about-scope-card__type">AUTOMATION</span>
+          <h3 class="about-scope-card__title">Infrastructure Automation</h3>
+          <p class="about-scope-card__desc">Developing automated operators, scripting routines in Go and Python, writing Terraform plans, and automating configurations with Ansible.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Tab Content: Clients (Hidden by default, toggled via JS) -->
+<section id="sect-clients" class="reveal reveal-delay-2 about-tab-content" style="display: none;">
+  <h2 class="section-title">Clients & Affiliations</h2>
+  <div class="clients-scroll">
+    <div class="clients-track">
+      <span class="client-card"><div class="client-card__placeholder">T</div><span class="client-card__name">Transletin</span></span>
+      <span class="client-card"><div class="client-card__placeholder">B</div><span class="client-card__name">Buangdisini</span></span>
+      <span class="client-card"><div class="client-card__placeholder">T</div><span class="client-card__name">TechCorp</span></span>
+      <span class="client-card"><div class="client-card__placeholder">C</div><span class="client-card__name">CloudBase</span></span>
+      <span class="client-card"><div class="client-card__placeholder">D</div><span class="client-card__name">DevOps Inc</span></span>
+      
+      <!-- Duplicate for infinite loop animation -->
+      <span class="client-card"><div class="client-card__placeholder">T</div><span class="client-card__name">Transletin</span></span>
+      <span class="client-card"><div class="client-card__placeholder">B</div><span class="client-card__name">Buangdisini</span></span>
+      <span class="client-card"><div class="client-card__placeholder">T</div><span class="client-card__name">TechCorp</span></span>
+      <span class="client-card"><div class="client-card__placeholder">C</div><span class="client-card__name">CloudBase</span></span>
+      <span class="client-card"><div class="client-card__placeholder">D</div><span class="client-card__name">DevOps Inc</span></span>
+    </div>
+  </div>
+</section>
+
+<script>
+  function switchAboutTab(tabName) {
+    // Hide all tab sections
+    document.querySelectorAll('.about-tab-content').forEach(el => el.style.display = 'none');
+    // Remove active class from all tab buttons
+    document.querySelectorAll('.seg-control__seg').forEach(el => {
+      el.classList.remove('seg-control__seg--active');
+      el.setAttribute('aria-selected', 'false');
+    });
+    
+    // Show active section
+    const targetSection = document.getElementById('sect-' + tabName);
+    if (targetSection) {
+      targetSection.style.display = 'block';
+    }
+    
+    // Set button active
+    const targetBtn = document.getElementById('tab-' + tabName);
+    if (targetBtn) {
+      targetBtn.classList.add('seg-control__seg--active');
+      targetBtn.setAttribute('aria-selected', 'true');
+    }
+  }
+</script>

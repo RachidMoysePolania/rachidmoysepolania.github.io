@@ -1,0 +1,39 @@
+- title: "Mini-Link — URL Shortener"
+  description: "Full-stack URL shortener built with MongoDB, Express, Vue.js, and Node.js (MEVN). Service discontinued."
+  category: "projects"
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/minilink_2e6dd04774.png"
+  website: "https://link.adityacprtm.dev"
+  github: "https://github.com/Adityacprtm/mini-link"
+  tags: ["MongoDB", "Express", "Vue.js", "Node.js", "MEVN"]
+
+- title: "GCP Associate Cloud Engineer"
+  description: "Professional Google Cloud certification validating skills in deploying, monitoring, and managing GCP infrastructure and services."
+  category: "certifications"
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
+  website: "#"
+  github: "#"
+  tags: ["GCP", "Cloud", "Associate Cloud Engineer"]
+
+- title: "AWS Cloud Practitioner"
+  description: "Foundational AWS certification validating core cloud concepts, services, and pricing models. Issued by Amazon Web Services."
+  category: "certifications"
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
+  website: "#"
+  github: "#"
+  tags: ["AWS", "Cloud Practitioner"]
+
+- title: "TryHackMe Badge"
+  description: "Cybersecurity practice badges earned on TryHackMe, covering penetration testing, network security, and CTF challenges."
+  category: "badges"
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
+  website: "#"
+  github: "#"
+  tags: ["Security", "TryHackMe", "CTF"]
+
+- title: "Static Asset Management"
+  description: "Managing static assets with AWS S3, Cloudflare CDN, and GitHub Actions."
+  category: "vibe coding"
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
+  website: "#"
+  github: "https://github.com/Adityacprtm/static-asset-management"
+  tags: ["AWS", "S3", "Cloudflare", "GitHub Actions"]

@@ -1,0 +1,35 @@
+---
+layout: default
+title: Technical Blog
+---
+<div class="pb-2">
+  <h1 class="title title--h1 first-title title__separate">Technical Blog<span class="title--tone">.</span></h1>
+  <p class="portfolio-intro">Articles about system reliability, DevOps, automation, and cloud deployments.</p>
+</div>
+
+<!-- Blog Posts Listing -->
+<div class="blog-posts-grid">
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts %}
+      <article class="blog-post-card reveal">
+        <div class="blog-post-card__meta overhead text-uppercase">
+          <span>{{ post.date | date: "%B %d, %Y" }}</span>
+          {% if post.category %}
+            <span>• {{ post.category }}</span>
+          {% endif %}
+        </div>
+        <h3 class="blog-post-card__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        <p class="blog-post-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <p class="blog-post-card__more">
+          <a href="{{ post.url | relative_url }}" class="about-portfolio-link">Read full post →</a>
+        </p>
+      </article>
+    {% endfor %}
+  {% else %}
+    <div class="search-modal__empty">
+      <p>No blog posts found. Check back later or add post files inside the `_posts/` folder!</p>
+    </div>
+  {% endif %}
+</div>

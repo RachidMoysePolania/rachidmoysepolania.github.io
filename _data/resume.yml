@@ -1,0 +1,68 @@
+experience:
+  - position: "Senior DevOps Engineer"
+    company: "Gramedia"
+    location: "Jakarta, Indonesia"
+    period: "May 2024 – Present"
+    duration: "2 yrs 3 mo"
+    is_current: true
+    bullets:
+      - "Directed multi-cloud migration program from Alibaba Cloud and GCP to AWS, reducing operational complexity."
+      - "Established AWS Landing Zone foundation with governance guardrails, audit logging, and security baselines."
+      - "Modernized infrastructure through a three-layer architecture (edge, application, data)."
+      - "Led Kubernetes upgrades and runtime transitions including Karpenter tuning."
+    tags: ["AWS", "Kubernetes", "Terraform", "Helm", "RDS", "GitHub Actions", "Karpenter", "GitOps"]
+
+  - position: "Site Reliability Engineer (SRE)"
+    company: "Lion Parcel"
+    location: "Jakarta, Indonesia"
+    period: "Jan 2021 – May 2024"
+    duration: "3 yrs 5 mo"
+    is_current: false
+    bullets:
+      - "Managed multi-cloud infrastructure on AWS and GCP, ensuring 99.9% availability."
+      - "Executed GCP to AWS migration with minimal downtime."
+      - "Provisioned infrastructure with Terraform and GitOps configurations."
+    tags: ["AWS", "GCP", "Kubernetes", "Jenkins", "Terraform", "Prometheus", "Grafana", "GitOps"]
+
+education:
+  - school: "University of Brawijaya"
+    degree: "Informatics Engineering"
+    focus: "Network-Based Computing"
+    period: "Sep 2015 – Feb 2020"
+    type: "formal" # formal, course
+    hours: ""
+
+  - school: "Dicoding - AWS"
+    degree: "Architecting on AWS"
+    focus: "Cloud and Back-End Developer Scholarship Program"
+    period: "Jul 2021 – Jul 2021"
+    type: "course"
+    hours: "40 Hours"
+
+core_skills:
+  - name: "Cloud Architecture"
+    level: "95%"
+  - name: "Container Orchestration (Kubernetes)"
+    level: "90%"
+  - name: "Infrastructure as Code (Terraform)"
+    level: "90%"
+  - name: "CI/CD & GitOps"
+    level: "85%"
+
+tooling:
+  - name: "AWS"
+  - name: "GCP"
+  - name: "Kubernetes"
+  - name: "Terraform"
+  - name: "Docker"
+  - name: "Helm"
+  - name: "Ansible"
+  - name: "Prometheus"
+  - name: "Grafana"
+  - name: "Jenkins"
+  - name: "GitHub Actions"
+  - name: "GitLab CI"
+  - name: "Linux"
+  - name: "Bash"
+  - name: "Python"
+  - name: "Go"

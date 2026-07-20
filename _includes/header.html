@@ -1,0 +1,98 @@
+<header class="header--collapsed header box box-entrance box-entrance--header">
+  <!-- Chrome-like border / operator label -->
+  <div class="header__chrome" aria-hidden="true">
+    <span class="header__chrome-dot header__chrome-dot--red"></span>
+    <span class="header__chrome-dot header__chrome-dot--amber"></span>
+    <span class="header__chrome-dot header__chrome-dot--green"></span>
+    <span class="header__chrome-label">operator console</span>
+  </div>
+
+  <div class="header__body">
+    <!-- Identity Profile Section -->
+    <div class="header-identity">
+      <div class="header-identity__photo">
+        <img class="header-identity__photo-img" src="{{ site.author.avatar }}" alt="{{ site.author.name }}" width="320" height="320">
+      </div>
+      <div class="header-identity__info">
+        <div class="header-identity__name">
+          {{ site.author.name }} <span class="header-identity__name-surname">{{ site.author.surname }}</span>
+        </div>
+        <div class="header-identity__role-rotator" id="roleRotator">
+          {% for role in site.author.roles %}
+            <span class="header-identity__role {% if forloop.first %}active{% endif %}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}">
+              {{ role }}
+            </span>
+          {% endfor %}
+        </div>
+        <div class="header-identity__operator">{{ site.author.role_prefix }}</div>
+      </div>
+    </div>
+
+    <!-- System Status Section -->
+    <div class="header-signal">
+      <div class="header-signal__title">system status</div>
+      <div class="header-signal__board">
+        <div class="header-signal__row header-signal__row--status">
+          <span class="header-signal__key">status</span>
+          <span class="header-signal__value">
+            <span class="header-signal__dot signal-{{ site.author.status }}" aria-hidden="true"></span> 
+            {{ site.author.status }}
+          </span>
+        </div>
+        <div class="header-signal__row">
+          <span class="header-signal__key">tz</span>
+          <span class="header-signal__value">{{ site.author.timezone }}</span>
+        </div>
+        <div class="header-signal__row">
+          <span class="header-signal__key">response</span>
+          <span class="header-signal__value">{{ site.author.response_time }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions, Email & Socials Section -->
+    <div class="header-action">
+      <div class="cv-group cv-group--header">
+        <a href="#contact" class="cv-btn cv-btn--header">
+          <span class="cv-btn__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </span>
+          <span class="cv-btn__text">Download CV</span>
+        </a>
+      </div>
+      <a href="mailto:{{ site.author.email }}" target="_blank" rel="noopener" class="header-action__email" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg> 
+        {{ site.author.email }}
+      </a>
+      <ul class="header-action__social" aria-label="Social media links">
+        {% if site.author.social.facebook %}
+          <li><a target="_blank" rel="noopener" href="{{ site.author.social.facebook }}" title="Facebook" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+        {% endif %}
+        {% if site.author.social.x %}
+          <li><a target="_blank" rel="noopener" href="{{ site.author.social.x }}" title="X" aria-label="X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon"><path d="M4 4l11.733 16h4.267l-11.733-16z"></path><path d="M4 20l6.768-6.768m2.464-2.464L20 4"></path></svg></a></li>
+        {% endif %}
+        {% if site.author.social.instagram %}
+          <li><a target="_blank" rel="noopener" href="{{ site.author.social.instagram }}" title="Instagram" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+        {% endif %}
+        {% if site.author.social.linkedin %}
+          <li><a target="_blank" rel="noopener" href="{{ site.author.social.linkedin }}" title="LinkedIn" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+        {% endif %}
+        {% if site.author.social.github %}
+          <li><a target="_blank" rel="noopener" href="{{ site.author.social.github }}" title="GitHub" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+  <button class="header-collapse-btn" aria-label="Toggle profile header" id="headerToggle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+</header>

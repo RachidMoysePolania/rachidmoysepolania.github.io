@@ -1,0 +1,124 @@
+---
+layout: default
+title: Interactive Operator Terminal
+---
+<div class="pb-2">
+  <h1 class="title title--h1 first-title title__separate">Terminal Emulator<span class="title--tone">.</span></h1>
+  <p class="portfolio-intro">Run console commands to query system assets directly from the terminal console.</p>
+</div>
+
+<!-- Interactive Terminal Container -->
+<div class="terminal-container reveal">
+  <div class="terminal-header">
+    <div class="terminal-chrome">
+      <span class="terminal-dot terminal-dot--red"></span>
+      <span class="terminal-dot terminal-dot--amber"></span>
+      <span class="terminal-dot terminal-dot--green"></span>
+    </div>
+    <div class="terminal-title">guest@operator-console: ~</div>
+  </div>
+  
+  <div class="terminal-body" id="terminalBody">
+    <div class="terminal-output-line">Welcome to Operator Console Terminal (v1.0.0-beta)</div>
+    <div class="terminal-output-line">Type <span class="title--tone">help</span> to list all available system commands.</div>
+    <div class="terminal-output-line">&nbsp;</div>
+  </div>
+
+  <div class="terminal-input-row">
+    <span class="terminal-prompt">guest@operator-console:~$</span>
+    <input type="text" class="terminal-input" id="terminalInput" autofocus autocomplete="off" spellcheck="false">
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('terminalInput');
+    const body = document.getElementById('terminalBody');
+    const container = document.querySelector('.terminal-container');
+
+    // Auto-focus input when clicking terminal container
+    container.addEventListener('click', () => {
+      input.focus();
+    });
+
+    const commands = {
+      help: () => `Available commands:<br>
+  - <span class="title--tone">about</span>  : Print operator details<br>
+  - <span class="title--tone">skills</span> : List core tech stack tags<br>
+  - <span class="title--tone">date</span>   : Display current time on server<br>
+  - <span class="title--tone">theme</span>  : Toggle between light/dark theme<br>
+  - <span class="title--tone">social</span> : Print active social links<br>
+  - <span class="title--tone">clear</span>  : Clear screen`,
+      
+      about: () => `Operator: {{ site.author.name }} {{ site.author.surname }}<br>
+Role: DevOps Cloud Engineer & Site Reliability Engineer (SRE)<br>
+Timezone: {{ site.author.timezone }}<br>
+Uptime Status: {{ site.author.status | upcase }}<br>
+Bio: Platform reliability engineer focusing on AWS/GCP, Kubernetes clusters, and Terraform infrastructure-as-code automation templates.`,
+      
+      skills: () => `Core Tools and Practices:<br>
+- Cloud Platforms: AWS, GCP, Alibaba Cloud<br>
+- Containers: Kubernetes (k8s), Docker, Helm<br>
+- IaC / Config: Terraform, Ansible, GitOps<br>
+- Pipelines: GitHub Actions, GitLab CI, Jenkins<br>
+- Monitoring: Prometheus, Grafana, Thanos, Elastic Stack`,
+      
+      date: () => new Date().toString(),
+      
+      theme: () => {
+        const root = document.documentElement;
+        const currentTheme = root.getAttribute('data-theme');
+        const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('portfolio-theme', nextTheme);
+        return `Theme switched to: ${nextTheme.toUpperCase()}`;
+      },
+      
+      social: () => `Social assets linked:<br>
+- LinkedIn: <a href="{{ site.author.social.linkedin }}" target="_blank" class="about-portfolio-link">LinkedIn Profile</a><br>
+- GitHub  : <a href="{{ site.author.social.github }}" target="_blank" class="about-portfolio-link">GitHub Profile</a><br>
+- X       : <a href="{{ site.author.social.x }}" target="_blank" class="about-portfolio-link">X Handle</a>`,
+      
+      clear: () => {
+        body.innerHTML = '';
+        return '';
+      }
+    };
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const value = input.value.trim();
+        input.value = '';
+
+        if (!value) return;
+
+        // Print input line
+        const cmdLine = document.createElement('div');
+        cmdLine.className = 'terminal-output-line';
+        cmdLine.innerHTML = `<span class="terminal-prompt">guest@operator-console:~$</span> ${value}`;
+        body.appendChild(cmdLine);
+
+        // Process command
+        const cleanCmd = value.toLowerCase();
+        let result = '';
+
+        if (commands[cleanCmd]) {
+          result = commands[cleanCmd]();
+        } else {
+          result = `command not found: ${value}. Type <span class="title--tone">help</span> for systems inventory.`;
+        }
+
+        // Print response if any (clear returns empty string but clears body)
+        if (result) {
+          const resLine = document.createElement('div');
+          resLine.className = 'terminal-output-line';
+          resLine.innerHTML = result;
+          body.appendChild(resLine);
+        }
+
+        // Scroll to bottom
+        body.scrollTop = body.scrollHeight;
+      }
+    });
+  });
+</script>

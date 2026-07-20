@@ -1,0 +1,74 @@
+---
+layout: default
+title: Operator Design System
+---
+<div class="pb-2">
+  <h1 class="title title--h1 first-title title__separate">Design System<span class="title--tone">.</span></h1>
+  <p class="portfolio-intro">The core color palette, UI tokens, interactive states, and layouts powering this template.</p>
+</div>
+
+<section class="reveal">
+  <h2 class="section-title">◆ Color Palette Variables</h2>
+  <div class="ds-color-grid">
+    <div class="ds-color-card" style="background: var(--c-bg)">
+      <span class="ds-color-label">--c-bg</span>
+    </div>
+    <div class="ds-color-card" style="background: var(--c-surface)">
+      <span class="ds-color-label">--c-surface</span>
+    </div>
+    <div class="ds-color-card" style="background: var(--c-border)">
+      <span class="ds-color-label">--c-border</span>
+    </div>
+    <div class="ds-color-card" style="background: var(--c-accent); color: #fff;">
+      <span class="ds-color-label">--c-accent</span>
+    </div>
+    <div class="ds-color-card" style="background: var(--c-accent-2); color: #fff;">
+      <span class="ds-color-label">--c-accent-2</span>
+    </div>
+    <div class="ds-color-card" style="background: var(--c-success); color: #fff;">
+      <span class="ds-color-label">--c-success</span>
+    </div>
+  </div>
+</section>
+
+<section class="reveal reveal-delay-2 mt-2">
+  <h2 class="section-title">◆ Button Classes & UI Elements</h2>
+  <div class="box ds-buttons-box">
+    <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+      <button class="cv-btn cv-btn--header">
+        <span class="cv-btn__text">Primary action</span>
+      </button>
+
+      <span class="status-badge">
+        <span class="status-badge__dot"></span>
+        <span class="status-badge__text">Status Operational</span>
+      </span>
+
+      <span class="exp-card__tag">DevOps</span>
+      <span class="exp-card__tag">Kubernetes</span>
+      
+      <span class="pill pill--mono pill--active">Active Pill</span>
+      <span class="pill pill--mono">Inactive Pill</span>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <div class="patch-panel" style="width: fit-content; border: none; margin: 0; padding: 0;">
+        <div class="patch-port patch-port--1"></div>
+        <div class="patch-port patch-port--2"></div>
+        <div class="patch-port patch-port--3"></div>
+        <div class="patch-port patch-port--4"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reveal reveal-delay-3 mt-2">
+  <h2 class="section-title">◆ Typography</h2>
+  <div class="box">
+    <span class="overhead">Overhead Title Segment</span>
+    <h1 style="margin: 5px 0 15px 0;">Heading Level 1 (Poppins Bold)</h1>
+    <h3 style="margin: 0 0 10px 0;">Heading Level 3 (Poppins Medium)</h3>
+    <p>This is basic body paragraph. It uses <strong>Poppins</strong> typeface with 1.7 line height for optimal readability. You can customize the look easily in the CSS variables.</p>
+    <code style="font-family: var(--font-mono); color: var(--c-accent-2);">guest@console:~$ echo "Mono font is JetBrains Mono or System defaults"</code>
+  </div>
+</section>
