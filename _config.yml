@@ -9,7 +9,7 @@ author:
   name: "Rachid"
   surname: "Moyse Polania"
   role_prefix: "operator/01"
-  email: "your.email@example.com" # Can be updated by user
+  email: "rachidmoyse1@hotmail.com"
   status: "available" # available, busy, offline
   timezone: "GMT-5"
   response_time: "<24h"
@@ -23,6 +23,7 @@ author:
     linkedin: "https://linkedin.com/in/rachid-moyse-polania" # Can be updated by user
     github: "https://github.com/RachidMoysePolania"
     x: "https://x.com/rachid"
+    certdirectory: "https://certdirectory.io/profile/0859c102-ddde-4c2f-a384-3eaacb83ca45"
 
 # Build settings
 markdown: kramdown
