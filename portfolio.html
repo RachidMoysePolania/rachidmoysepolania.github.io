@@ -51,7 +51,7 @@ title: Portfolio
             {% endif %}
           </span>
           <div class="img-blur-wrap">
-            <img class="portfolio-card__img cover" loading="lazy" src="{{ project.image }}" alt="{{ project.title }}">
+            <img class="portfolio-card__img cover" loading="lazy" src="{{ project.image | relative_url }}" alt="{{ project.title }}">
           </div>
           <div class="portfolio-card__overlay">
             <div class="portfolio-card__overlay-content">
