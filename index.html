@@ -3,21 +3,37 @@ layout: default
 title: About Me
 ---
 <div class="pb-2 reveal">
-  <h1 class="title title--h1 first-title title__separate">About Me<span class="title--tone">.</span></h1>
+  <h1 class="title title--h1 first-title title__separate">
+    <span lang="en">About Me</span>
+    <span lang="es">Sobre Mí</span>
+    <span class="title--tone">.</span>
+  </h1>
 </div>
 
 <!-- Story Section -->
 <section id="story" class="reveal">
   <div>
-    <div class="about-story__intro">◆ Senior DevSecOps & Platform Engineer</div>
-    <article class="about-story__body">
+    <div class="about-story__intro">
+      <span lang="en">◆ Senior DevSecOps & Platform Engineer</span>
+      <span lang="es">◆ Ingeniero Senior de DevSecOps y Plataforma</span>
+    </div>
+    <article class="about-story__body" lang="en">
       Senior DevSecOps and Platform Engineer with extensive experience in government and enterprise projects. 
       Proficient in Threat Hunting using MITRE ATT&CK and open-source tools, with a strong focus on embedding shift-left security principles directly into CI/CD pipelines. 
       Demonstrated expertise implementing SAST, DAST, and Software Composition Analysis (SCA) using Snyk, SonarQube, and OWASP ZAP to ensure robust application and container security. 
       Highly skilled in cloud environments (AWS, Azure) and regulatory compliance (HIPAA, PCI-DSS, SOC 2, ISO 27001).
     </article>
+    <article class="about-story__body" lang="es">
+      Ingeniero Senior de DevSecOps y Plataforma con amplia experiencia en proyectos gubernamentales y empresariales. 
+      Competente en Threat Hunting utilizando MITRE ATT&CK y herramientas de código abierto, con un fuerte enfoque en integrar principios de seguridad "shift-left" directamente en los pipelines de CI/CD. 
+      Experiencia demostrada en la implementación de SAST, DAST y Análisis de Composición de Software (SCA) utilizando Snyk, SonarQube y OWASP ZAP para garantizar una seguridad sólida en aplicaciones y contenedores. 
+      Altamente capacitado en entornos de nube (AWS, Azure) y cumplimiento regulatorio (HIPAA, PCI-DSS, SOC 2, ISO 27001).
+    </article>
     <p class="about-story__cta">
-      <a href="{{ '/portfolio.html' | relative_url }}" class="about-portfolio-link">See my DevSecOps portfolio →</a>
+      <a href="{{ '/portfolio.html' | relative_url }}" class="about-portfolio-link">
+        <span lang="en">See my DevSecOps portfolio →</span>
+        <span lang="es">Ver mi portafolio de DevSecOps →</span>
+      </a>
     </p>
   </div>
 </section>
@@ -28,39 +44,63 @@ title: About Me
     <span class="seg-control__seg-label">STATS</span>
   </button>
   <button class="seg-control__seg" role="tab" id="tab-scope" aria-selected="false" onclick="switchAboutTab('scope')">
-    <span class="seg-control__seg-label">SCOPE</span>
+    <span class="seg-control__seg-label">
+      <span lang="en">SCOPE</span>
+      <span lang="es">ENFOQUE</span>
+    </span>
   </button>
   <button class="seg-control__seg" role="tab" id="tab-clients" aria-selected="false" onclick="switchAboutTab('clients')">
-    <span class="seg-control__seg-label">CLIENTS</span>
+    <span class="seg-control__seg-label">
+      <span lang="en">CLIENTS</span>
+      <span lang="es">CLIENTES</span>
+    </span>
   </button>
 </nav>
 
 <!-- Tab Content: Stats -->
 <section id="sect-stats" class="reveal reveal-delay-2 about-tab-content">
-  <h2 class="section-title">By the Numbers</h2>
+  <h2 class="section-title">
+    <span lang="en">By the Numbers</span>
+    <span lang="es">En Números</span>
+  </h2>
   <div class="stats-grid">
     <a href="{{ '/resume.html#experience' | relative_url }}" class="stat-card stat-card--link">
       <span class="stat-card__number">9+</span>
-      <span class="stat-card__label">Years Experience</span>
+      <span class="stat-card__label">
+        <span lang="en">Years Experience</span>
+        <span lang="es">Años de Experiencia</span>
+      </span>
     </a>
     <a href="{{ '/portfolio.html?category=projects' | relative_url }}" class="stat-card stat-card--link">
       <span class="stat-card__number">10+</span>
-      <span class="stat-card__label">Projects Done</span>
+      <span class="stat-card__label">
+        <span lang="en">Projects Done</span>
+        <span lang="es">Proyectos Realizados</span>
+      </span>
     </a>
     <a href="{{ '/resume.html#tools' | relative_url }}" class="stat-card stat-card--link">
       <span class="stat-card__number">37+</span>
-      <span class="stat-card__label">Technologies</span>
+      <span class="stat-card__label">
+        <span lang="en">Technologies</span>
+        <span lang="es">Tecnologías</span>
+      </span>
     </a>
     <a href="{{ '/portfolio.html?category=certifications' | relative_url }}" class="stat-card stat-card--link">
       <span class="stat-card__number">16</span>
-      <span class="stat-card__label">Certifications</span>
+      <span class="stat-card__label">
+        <span lang="en">Certifications</span>
+        <span lang="es">Certificaciones</span>
+      </span>
     </a>
   </div>
 </section>
 
 <!-- Tab Content: Scope (Hidden by default, toggled via JS) -->
 <section id="sect-scope" class="reveal reveal-delay-2 about-tab-content" style="display: none;">
-  <h2 class="section-title">What I'm Doing</h2>
+  <h2 class="section-title">
+    <span lang="en">What I'm Doing</span>
+    <span lang="es">Lo que Hago</span>
+  </h2>
   <div class="about-scope-grid">
     <div class="about-scope-grid__item">
       <article class="about-scope-card">
@@ -68,9 +108,13 @@ title: About Me
           <span class="about-scope-card__icon">🛡️</span>
         </div>
         <div class="about-scope-card__body">
-          <span class="about-scope-card__type">SECURITY</span>
+          <span class="about-scope-card__type">
+            <span lang="en">SECURITY</span>
+            <span lang="es">SEGURIDAD</span>
+          </span>
           <h3 class="about-scope-card__title">DevSecOps</h3>
-          <p class="about-scope-card__desc">Designing CI/CD pipelines with integrated security — container vulnerability scans, secret leakage protection, and IAM governance compliance.</p>
+          <p class="about-scope-card__desc" lang="en">Designing CI/CD pipelines with integrated security — container vulnerability scans, secret leakage protection, and IAM governance compliance.</p>
+          <p class="about-scope-card__desc" lang="es">Diseño de pipelines de CI/CD con seguridad integrada: escaneo de vulnerabilidades en contenedores, protección contra fugas de credenciales y cumplimiento de gobernanza IAM.</p>
         </div>
       </article>
     </div>
@@ -81,9 +125,16 @@ title: About Me
           <span class="about-scope-card__icon">☁️</span>
         </div>
         <div class="about-scope-card__body">
-          <span class="about-scope-card__type">CLOUD</span>
-          <h3 class="about-scope-card__title">Cloud Engineering</h3>
-          <p class="about-scope-card__desc">Building landing zones and architecture baselines on AWS and GCP with focus on networking topologies and cost-effective compute nodes.</p>
+          <span class="about-scope-card__type">
+            <span lang="en">CLOUD</span>
+            <span lang="es">NUBE</span>
+          </span>
+          <h3 class="about-scope-card__title">
+            <span lang="en">Cloud Engineering</span>
+            <span lang="es">Ingeniería Cloud</span>
+          </h3>
+          <p class="about-scope-card__desc" lang="en">Building landing zones and architecture baselines on AWS and GCP with focus on networking topologies and cost-effective compute nodes.</p>
+          <p class="about-scope-card__desc" lang="es">Construcción de zonas de aterrizaje y bases de arquitectura en AWS y GCP con enfoque en topologías de red y nodos informáticos rentables.</p>
         </div>
       </article>
     </div>
@@ -94,9 +145,13 @@ title: About Me
           <span class="about-scope-card__icon">⚙️</span>
         </div>
         <div class="about-scope-card__body">
-          <span class="about-scope-card__type">RELIABILITY</span>
+          <span class="about-scope-card__type">
+            <span lang="en">RELIABILITY</span>
+            <span lang="es">CONFIABILIDAD</span>
+          </span>
           <h3 class="about-scope-card__title">SRE</h3>
-          <p class="about-scope-card__desc">Ensuring high-availability (99.9% uptime) for distributed platforms using Kubernetes, autoscaling, and Thanos/Prometheus observability stacks.</p>
+          <p class="about-scope-card__desc" lang="en">Ensuring high-availability (99.9% uptime) for distributed platforms using Kubernetes, autoscaling, and Thanos/Prometheus observability stacks.</p>
+          <p class="about-scope-card__desc" lang="es">Garantizar la alta disponibilidad (99.9% de tiempo de actividad) para plataformas distribuidas utilizando Kubernetes, escalado automático y pilas de observabilidad Thanos/Prometheus.</p>
         </div>
       </article>
     </div>
@@ -107,9 +162,16 @@ title: About Me
           <span class="about-scope-card__icon">🤖</span>
         </div>
         <div class="about-scope-card__body">
-          <span class="about-scope-card__type">AUTOMATION</span>
-          <h3 class="about-scope-card__title">Infrastructure Automation</h3>
-          <p class="about-scope-card__desc">Developing automated operators, scripting routines in Go and Python, writing Terraform plans, and automating configurations with Ansible.</p>
+          <span class="about-scope-card__type">
+            <span lang="en">AUTOMATION</span>
+            <span lang="es">AUTOMATIZACIÓN</span>
+          </span>
+          <h3 class="about-scope-card__title">
+            <span lang="en">Infrastructure Automation</span>
+            <span lang="es">Automatización de Infraestructura</span>
+          </h3>
+          <p class="about-scope-card__desc" lang="en">Developing automated operators, scripting routines in Go and Python, writing Terraform plans, and automating configurations with Ansible.</p>
+          <p class="about-scope-card__desc" lang="es">Desarrollo de operadores automatizados, rutinas de scripting en Go y Python, planes de Terraform y automatización de configuraciones con Ansible.</p>
         </div>
       </article>
     </div>
@@ -118,7 +180,10 @@ title: About Me
 
 <!-- Tab Content: Clients (Hidden by default, toggled via JS) -->
 <section id="sect-clients" class="reveal reveal-delay-2 about-tab-content" style="display: none;">
-  <h2 class="section-title">Clients & Affiliations</h2>
+  <h2 class="section-title">
+    <span lang="en">Clients & Affiliations</span>
+    <span lang="es">Clientes y Afiliaciones</span>
+  </h2>
   <div class="clients-scroll">
     <div class="clients-track">
       <span class="client-card"><div class="client-card__placeholder">A</div><span class="client-card__name">AstraZeneca</span></span>

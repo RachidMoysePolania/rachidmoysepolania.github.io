@@ -1,10 +1,17 @@
 ---
 layout: default
-title: Technical Blog
+title: Blog
 ---
 <div class="pb-2">
-  <h1 class="title title--h1 first-title title__separate">Technical Blog<span class="title--tone">.</span></h1>
-  <p class="portfolio-intro">Articles about system reliability, DevOps, automation, and cloud deployments.</p>
+  <h1 class="title title--h1 first-title title__separate">
+    <span lang="en">Technical Blog</span>
+    <span lang="es">Blog Técnico</span>
+    <span class="title--tone">.</span>
+  </h1>
+  <p class="portfolio-intro">
+    <span lang="en">Articles about system reliability, DevOps, automation, and cloud deployments.</span>
+    <span lang="es">Artículos sobre confiabilidad de sistemas, DevOps, automatización y despliegues en la nube.</span>
+  </p>
 </div>
 
 <!-- Blog Posts Listing -->
@@ -13,7 +20,27 @@ title: Technical Blog
     {% for post in site.posts %}
       <article class="blog-post-card reveal">
         <div class="blog-post-card__meta overhead text-uppercase">
-          <span>{{ post.date | date: "%B %d, %Y" }}</span>
+          <span>
+            <span lang="en">{{ post.date | date: "%B %d, %Y" }}</span>
+            <span lang="es">
+              {% assign m = post.date | date: "%m" %}
+              {% case m %}
+                {% when '01' %}Enero
+                {% when '02' %}Febrero
+                {% when '03' %}Marzo
+                {% when '04' %}Abril
+                {% when '05' %}Mayo
+                {% when '06' %}Junio
+                {% when '07' %}Julio
+                {% when '08' %}Agosto
+                {% when '09' %}Septiembre
+                {% when '10' %}Octubre
+                {% when '11' %}Noviembre
+                {% when '12' %}Diciembre
+              {% endcase %}
+              {{ post.date | date: "%d, %Y" }}
+            </span>
+          </span>
           {% if post.category %}
             <span>• {{ post.category }}</span>
           {% endif %}
@@ -23,13 +50,17 @@ title: Technical Blog
         </h3>
         <p class="blog-post-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         <p class="blog-post-card__more">
-          <a href="{{ post.url | relative_url }}" class="about-portfolio-link">Read full post →</a>
+          <a href="{{ post.url | relative_url }}" class="about-portfolio-link">
+            <span lang="en">Read full post →</span>
+            <span lang="es">Leer artículo completo →</span>
+          </a>
         </p>
       </article>
     {% endfor %}
   {% else %}
     <div class="search-modal__empty">
-      <p>No blog posts found. Check back later or add post files inside the `_posts/` folder!</p>
+      <p lang="en">No blog posts found. Check back later or add post files inside the `_posts/` folder!</p>
+      <p lang="es">No se encontraron artículos en el blog. ¡Vuelva más tarde o agregue archivos de artículos dentro de la carpeta `_posts/`!</p>
     </div>
   {% endif %}
 </div>

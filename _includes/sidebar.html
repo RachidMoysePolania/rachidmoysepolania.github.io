@@ -18,7 +18,7 @@
             <circle cx="12" cy="7" r="4"></circle>
           </svg>
         </span>
-        <span class="nav__label">About</span>
+        <span class="nav__label"><span lang="en">About</span><span lang="es">Sobre Mí</span></span>
         <span class="nav-led {% if page.url == '/' or page.url == '/index.html' %}nav-led--active{% endif %}" aria-hidden="true"></span>
       </a>
     </li>
@@ -32,7 +32,7 @@
             <rect x="3" y="14" width="7" height="7"></rect>
           </svg>
         </span>
-        <span class="nav__label">Portfolio</span>
+        <span class="nav__label"><span lang="en">Portfolio</span><span lang="es">Portafolio</span></span>
         <span class="nav-led {% if page.url == '/portfolio.html' %}nav-led--active{% endif %}" aria-hidden="true"></span>
       </a>
     </li>
@@ -47,7 +47,7 @@
             <polyline points="10 9 9 9 8 9"></polyline>
           </svg>
         </span>
-        <span class="nav__label">Resume</span>
+        <span class="nav__label"><span lang="en">Resume</span><span lang="es">Trayectoria</span></span>
         <span class="nav-led {% if page.url == '/resume.html' %}nav-led--active{% endif %}" aria-hidden="true"></span>
       </a>
     </li>
@@ -59,7 +59,7 @@
             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
           </svg>
         </span>
-        <span class="nav__label">Blog</span>
+        <span class="nav__label"><span lang="en">Blog</span><span lang="es">Blog</span></span>
         <span class="nav-led {% if page.url contains '/blog' or page.layout == 'post' %}nav-led--active{% endif %}" aria-hidden="true"></span>
       </a>
     </li>
@@ -71,7 +71,7 @@
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
         </span>
-        <span class="nav__label">Contact</span>
+        <span class="nav__label"><span lang="en">Contact</span><span lang="es">Contacto</span></span>
         <span class="nav-led {% if page.url == '/contact.html' %}nav-led--active{% endif %}" aria-hidden="true"></span>
       </a>
     </li>
@@ -83,7 +83,7 @@
             <line x1="12" y1="19" x2="20" y2="19"></line>
           </svg>
         </span>
-        <span class="nav__label">Terminal</span>
+        <span class="nav__label"><span lang="en">Terminal</span><span lang="es">Terminal</span></span>
         <span class="nav-led {% if page.url == '/terminal.html' %}nav-led--active{% endif %}" aria-hidden="true"></span>
       </a>
     </li>
@@ -110,7 +110,7 @@
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
       </span>
-      <span class="search-trigger__label">Search</span>
+      <span class="search-trigger__label"><span lang="en">Search</span><span lang="es">Buscar</span></span>
     </button>
     
     <div class="locale-seg" role="radiogroup" aria-label="Language: EN">
@@ -135,7 +135,7 @@
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       </span>
-      <span class="theme-toggle__label" id="themeLabel">Dark</span>
+      <span class="theme-toggle__label" id="themeLabel"><span lang="en">Dark</span><span lang="es">Oscuro</span></span>
     </button>
   </div>
 </nav>
@@ -151,7 +151,7 @@
             <circle cx="12" cy="7" r="4"></circle>
           </svg>
         </span>
-        <span class="tablet-nav__label">About</span>
+        <span class="tablet-nav__label"><span lang="en">About</span><span lang="es">Sobre Mí</span></span>
       </a>
       <a href="{{ '/portfolio.html' | relative_url }}" class="tablet-nav__item {% if page.url == '/portfolio.html' %}tablet-nav__item--active{% endif %}" title="Portfolio">
         <span class="tablet-nav__icon">
@@ -162,7 +162,7 @@
             <rect x="3" y="14" width="7" height="7"></rect>
           </svg>
         </span>
-        <span class="tablet-nav__label">Portfolio</span>
+        <span class="tablet-nav__label"><span lang="en">Portfolio</span><span lang="es">Portafolio</span></span>
       </a>
       <a href="{{ '/resume.html' | relative_url }}" class="tablet-nav__item {% if page.url == '/resume.html' %}tablet-nav__item--active{% endif %}" title="Resume">
         <span class="tablet-nav__icon">
@@ -174,7 +174,7 @@
             <polyline points="10 9 9 9 8 9"></polyline>
           </svg>
         </span>
-        <span class="tablet-nav__label">Resume</span>
+        <span class="tablet-nav__label"><span lang="en">Resume</span><span lang="es">Trayectoria</span></span>
       </a>
       <a href="{{ '/blog.html' | relative_url }}" class="tablet-nav__item {% if page.url contains '/blog' or page.layout == 'post' %}tablet-nav__item--active{% endif %}" title="Blog">
         <span class="tablet-nav__icon">
@@ -183,7 +183,7 @@
             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
           </svg>
         </span>
-        <span class="tablet-nav__label">Blog</span>
+        <span class="tablet-nav__label"><span lang="en">Blog</span><span lang="es">Blog</span></span>
       </a>
     </div>
     
@@ -217,7 +217,7 @@
             <circle cx="12" cy="7" r="4"></circle>
           </svg>
         </span>
-        <span class="mobile-dock__label">About</span>
+        <span class="mobile-dock__label"><span lang="en">About</span><span lang="es">Sobre Mí</span></span>
       </a>
       <a href="{{ '/portfolio.html' | relative_url }}" class="mobile-dock__item {% if page.url == '/portfolio.html' %}mobile-dock__item--active{% endif %}" title="Portfolio">
         <span class="mobile-dock__icon">
@@ -228,7 +228,7 @@
             <rect x="3" y="14" width="7" height="7"></rect>
           </svg>
         </span>
-        <span class="mobile-dock__label">Portfolio</span>
+        <span class="mobile-dock__label"><span lang="en">Portfolio</span><span lang="es">Portafolio</span></span>
       </a>
       <a href="{{ '/resume.html' | relative_url }}" class="mobile-dock__item {% if page.url == '/resume.html' %}mobile-dock__item--active{% endif %}" title="Resume">
         <span class="mobile-dock__icon">
@@ -237,7 +237,7 @@
             <polyline points="14 2 14 8 20 8"></polyline>
           </svg>
         </span>
-        <span class="mobile-dock__label">Resume</span>
+        <span class="mobile-dock__label"><span lang="en">Resume</span><span lang="es">Trayectoria</span></span>
       </a>
       <button class="mobile-dock__more" id="mobileMenuMoreBtn" aria-label="More navigation options">
         <span class="mobile-dock__more-icon">
@@ -259,19 +259,19 @@
         <span class="mobile-drawer__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
         </span>
-        <span class="mobile-drawer__label">Blog</span>
+        <span class="mobile-drawer__label"><span lang="en">Blog</span><span lang="es">Blog</span></span>
       </a>
       <a href="{{ '/contact.html' | relative_url }}" class="mobile-drawer__item {% if page.url == '/contact.html' %}mobile-drawer__item--active{% endif %}">
         <span class="mobile-drawer__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
         </span>
-        <span class="mobile-drawer__label">Contact</span>
+        <span class="mobile-drawer__label"><span lang="en">Contact</span><span lang="es">Contacto</span></span>
       </a>
       <a href="{{ '/terminal.html' | relative_url }}" class="mobile-drawer__item {% if page.url == '/terminal.html' %}mobile-drawer__item--active{% endif %}">
         <span class="mobile-drawer__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
         </span>
-        <span class="mobile-drawer__label">Terminal</span>
+        <span class="mobile-drawer__label"><span lang="en">Terminal</span><span lang="es">Terminal</span></span>
       </a>
     </div>
 
@@ -283,7 +283,7 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </span>
-        <span class="mobile-drawer__theme-label" id="mobileThemeLabel">Dark</span>
+        <span class="mobile-drawer__theme-label" id="mobileThemeLabel"><span lang="en">Dark</span><span lang="es">Oscuro</span></span>
       </button>
       <div class="mobile-drawer__locale">
         <button class="mobile-drawer__locale-btn mobile-drawer__locale-btn--active">EN</button>

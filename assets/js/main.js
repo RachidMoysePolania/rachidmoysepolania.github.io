@@ -1,4 +1,68 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // === Language System ===
+  const langButtons = document.querySelectorAll('.locale-seg__btn, .tablet-utils__locale-btn, .mobile-drawer__locale-btn');
+
+  const langTitles = {
+    en: {
+      "About Me": "About Me",
+      "Resume": "Resume",
+      "Portfolio": "Portfolio",
+      "Blog": "Blog",
+      "Contact": "Contact",
+      "Terminal": "Terminal"
+    },
+    es: {
+      "About Me": "Sobre Mí",
+      "Resume": "Trayectoria",
+      "Portfolio": "Portafolio",
+      "Blog": "Blog",
+      "Contact": "Contacto",
+      "Terminal": "Terminal"
+    }
+  };
+
+  function updateLanguageUI(lang) {
+    document.documentElement.setAttribute('lang', lang);
+    localStorage.setItem('portfolio-lang', lang);
+
+    // Sync button states
+    langButtons.forEach(btn => {
+      const btnText = btn.textContent.trim().toLowerCase();
+      const isBtnActive = btnText === lang;
+      
+      btn.classList.toggle('locale-seg__btn--active', isBtnActive);
+      btn.classList.toggle('tablet-utils__locale-btn--active', isBtnActive);
+      btn.classList.toggle('mobile-drawer__locale-btn--active', isBtnActive);
+      btn.setAttribute('aria-pressed', isBtnActive ? 'true' : 'false');
+    });
+
+    // Update document title if matches page title
+    const currentTitle = document.title.split(' | ')[0];
+    const siteTitle = document.title.split(' | ')[1] || "Rachid Moyse Polania";
+    
+    let titleKey = currentTitle;
+    for (const [key, value] of Object.entries(langTitles.en)) {
+      if (value === currentTitle || langTitles.es[key] === currentTitle) {
+        titleKey = key;
+        break;
+      }
+    }
+    if (langTitles[lang] && langTitles[lang][titleKey]) {
+      document.title = `${langTitles[lang][titleKey]} | ${siteTitle}`;
+    }
+
+    // Refresh theme labels language
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    updateThemeUI(currentTheme);
+  }
+
+  langButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.textContent.trim().toLowerCase();
+      updateLanguageUI(lang);
+    });
+  });
+
   // === Theme System ===
   const themeToggleBtn = document.getElementById('themeToggleBtn');
   const tabletThemeToggle = document.getElementById('tabletThemeToggle');
@@ -9,9 +73,39 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateThemeUI(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     const isDark = theme === 'dark';
+    const lang = document.documentElement.getAttribute('lang') || 'en';
     
-    if (themeLabel) themeLabel.textContent = isDark ? 'Dark' : 'Light';
-    if (mobileThemeLabel) mobileThemeLabel.textContent = isDark ? 'Dark' : 'Light';
+    let label = '';
+    if (lang === 'es') {
+      label = isDark ? 'Oscuro' : 'Claro';
+    } else {
+      label = isDark ? 'Dark' : 'Light';
+    }
+
+    // Find and update the inner text of the theme labels without replacing their icon SVGs if any
+    if (themeLabel) {
+      const labelTextSpan = themeLabel.querySelector('span[lang]') || themeLabel;
+      if (labelTextSpan !== themeLabel) {
+        // Updated multilingual structures
+        const enSpan = themeLabel.querySelector('span[lang="en"]');
+        const esSpan = themeLabel.querySelector('span[lang="es"]');
+        if (enSpan) enSpan.textContent = isDark ? 'Dark' : 'Light';
+        if (esSpan) esSpan.textContent = isDark ? 'Oscuro' : 'Claro';
+      } else {
+        themeLabel.textContent = label;
+      }
+    }
+    if (mobileThemeLabel) {
+      const mobileLabelTextSpan = mobileThemeLabel.querySelector('span[lang]') || mobileThemeLabel;
+      if (mobileLabelTextSpan !== mobileThemeLabel) {
+        const enSpan = mobileThemeLabel.querySelector('span[lang="en"]');
+        const esSpan = mobileThemeLabel.querySelector('span[lang="es"]');
+        if (enSpan) enSpan.textContent = isDark ? 'Dark' : 'Light';
+        if (esSpan) esSpan.textContent = isDark ? 'Oscuro' : 'Claro';
+      } else {
+        mobileThemeLabel.textContent = label;
+      }
+    }
   }
 
   function toggleTheme() {
@@ -30,6 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   updateThemeUI(currentSavedTheme);
 
+  // Sync initial language status
+  const currentSavedLang = localStorage.getItem('portfolio-lang') || 'en';
+  updateLanguageUI(currentSavedLang);
 
   // === Roles Rotator ===
   const roles = document.querySelectorAll('#roleRotator .header-identity__role');
@@ -39,16 +136,20 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
       // Hide current role
       const currentRole = roles[currentRoleIdx];
-      currentRole.classList.remove('active');
-      currentRole.setAttribute('aria-hidden', 'true');
+      if (currentRole) {
+        currentRole.classList.remove('active');
+        currentRole.setAttribute('aria-hidden', 'true');
+      }
       
       // Select next index
       currentRoleIdx = (currentRoleIdx + 1) % roles.length;
       
       // Show next role
       const nextRole = roles[currentRoleIdx];
-      nextRole.classList.add('active');
-      nextRole.setAttribute('aria-hidden', 'false');
+      if (nextRole) {
+        nextRole.classList.add('active');
+        nextRole.setAttribute('aria-hidden', 'false');
+      }
     }, 3000);
   }
 

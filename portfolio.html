@@ -3,35 +3,56 @@ layout: default
 title: Portfolio
 ---
 <div class="pb-2">
-  <h1 class="title title--h1 first-title title__separate">Portfolio<span class="title--tone">.</span></h1>
-  <p class="portfolio-intro">Cloud infrastructure, Kubernetes platform engineering, and automation projects. Filter items by category.</p>
+  <h1 class="title title--h1 first-title title__separate">
+    <span lang="en">Portfolio</span>
+    <span lang="es">Portafolio</span>
+    <span class="title--tone">.</span>
+  </h1>
+  <p class="portfolio-intro">
+    <span lang="en">Cloud infrastructure, Kubernetes platform engineering, and automation projects. Filter items by category.</span>
+    <span lang="es">Proyectos de infraestructura en la nube, ingeniería de plataformas Kubernetes y automatización. Filtre por categoría.</span>
+  </p>
 </div>
 
 <!-- Portfolio Filters -->
 <div class="portfolio-explore" role="group" aria-label="Filter portfolio by category">
   <div class="portfolio-explore__chips">
     <button class="pill pill--mono pill--active" onclick="filterPortfolio('all', this)">
-      All <span class="pill__count">{{ site.data.projects | size }}</span>
+      <span lang="en">All</span>
+      <span lang="es">Todos</span> 
+      <span class="pill__count">{{ site.data.projects | size }}</span>
     </button>
     
     {% assign certs = site.data.projects | where: "category", "certifications" %}
     <button class="pill pill--mono" onclick="filterPortfolio('certifications', this)">
-      🏆 Certifications <span class="pill__count">{{ certs | size }}</span>
+      🏆 
+      <span lang="en">Certifications</span>
+      <span lang="es">Certificaciones</span> 
+      <span class="pill__count">{{ certs | size }}</span>
     </button>
     
     {% assign projs = site.data.projects | where: "category", "projects" %}
     <button class="pill pill--mono" onclick="filterPortfolio('projects', this)">
-      🚀 Projects <span class="pill__count">{{ projs | size }}</span>
+      🚀 
+      <span lang="en">Projects</span>
+      <span lang="es">Proyectos</span> 
+      <span class="pill__count">{{ projs | size }}</span>
     </button>
     
     {% assign badges = site.data.projects | where: "category", "badges" %}
     <button class="pill pill--mono" onclick="filterPortfolio('badges', this)">
-      🎖️ Badges <span class="pill__count">{{ badges | size }}</span>
+      🎖️ 
+      <span lang="en">Badges</span>
+      <span lang="es">Insignias</span> 
+      <span class="pill__count">{{ badges | size }}</span>
     </button>
 
     {% assign vibe = site.data.projects | where: "category", "vibe coding" %}
     <button class="pill pill--mono" onclick="filterPortfolio('vibe coding', this)">
-      🤖 Vibe Coding <span class="pill__count">{{ vibe | size }}</span>
+      🤖 
+      <span lang="en">Vibe Coding</span>
+      <span lang="es">Programación Vibe</span> 
+      <span class="pill__count">{{ vibe | size }}</span>
     </button>
   </div>
 </div>
@@ -44,21 +65,35 @@ title: Portfolio
         
         <div class="portfolio-card__img-wrap" role="presentation">
           <span class="portfolio-card__category">
-            {% if project.category == 'projects' %}🚀 Projects
-            {% elsif project.category == 'certifications' %}🏆 Certs
-            {% elsif project.category == 'badges' %}🎖️ Badges
-            {% else %}🤖 Vibe Coding
-            {% endif %}
+            <span lang="en">
+              {% if project.category == 'projects' %}🚀 Projects
+              {% elsif project.category == 'certifications' %}🏆 Certs
+              {% elsif project.category == 'badges' %}🎖️ Badges
+              {% else %}🤖 Vibe Coding
+              {% endif %}
+            </span>
+            <span lang="es">
+              {% if project.category == 'projects' %}🚀 Proyectos
+              {% elsif project.category == 'certifications' %}🏆 Certs
+              {% elsif project.category == 'badges' %}🎖️ Insignias
+              {% else %}🤖 Programación Vibe
+              {% endif %}
+            </span>
           </span>
           <div class="img-blur-wrap">
             <img class="portfolio-card__img cover" loading="lazy" src="{{ project.image | relative_url }}" alt="{{ project.title }}">
           </div>
           <div class="portfolio-card__overlay">
             <div class="portfolio-card__overlay-content">
-              <p class="portfolio-card__overlay-desc">{{ project.description }}</p>
+              <p class="portfolio-card__overlay-desc" lang="en">{{ project.description_en }}</p>
+              <p class="portfolio-card__overlay-desc" lang="es">{{ project.description_es }}</p>
               <div class="portfolio-card__overlay-links">
                 {% if project.website != '#' %}
-                  <a href="{{ project.website }}" target="_blank" rel="noopener" class="portfolio-card__overlay-link">Website <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                  <a href="{{ project.website }}" target="_blank" rel="noopener" class="portfolio-card__overlay-link">
+                    <span lang="en">Website</span>
+                    <span lang="es">Sitio Web</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
                 {% endif %}
                 {% if project.github != '#' %}
                   <a href="{{ project.github }}" target="_blank" rel="noopener" class="portfolio-card__overlay-link">GitHub <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
@@ -69,7 +104,8 @@ title: Portfolio
         </div>
 
         <div class="portfolio-card__content">
-          <h4 class="portfolio-card__title">{{ project.title }}</h4>
+          <h4 class="portfolio-card__title" lang="en">{{ project.title_en }}</h4>
+          <h4 class="portfolio-card__title" lang="es">{{ project.title_es }}</h4>
           <div class="portfolio-card__tags">
             {% for tag in project.tags %}
               <span class="exp-card__tag">{{ tag }}</span>
@@ -88,31 +124,17 @@ title: Portfolio
     document.querySelectorAll('.portfolio-explore__chips .pill').forEach(btn => {
       btn.classList.remove('pill--active');
     });
-    // Add active class to clicked button
+    
+    // Set active button
     buttonEl.classList.add('pill--active');
-
-    // Show/hide grid cards
-    document.querySelectorAll('.category-card').forEach(card => {
-      const cardCat = card.getAttribute('data-category');
-      if (category === 'all' || cardCat === category) {
+    
+    // Filter cards
+    document.querySelectorAll('.portfolio-grid .category-card').forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
         card.style.display = 'block';
       } else {
         card.style.display = 'none';
       }
     });
   }
-
-  // Parse URL search parameters to filter on page load if needed (e.g. ?category=projects)
-  window.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const cat = params.get('category');
-    if (cat) {
-      const chips = document.querySelectorAll('.portfolio-explore__chips .pill');
-      chips.forEach(chip => {
-        if (chip.textContent.toLowerCase().includes(cat.toLowerCase())) {
-          chip.click();
-        }
-      });
-    }
-  });
 </script>

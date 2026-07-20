@@ -1,10 +1,17 @@
 ---
 layout: default
-title: Interactive Operator Terminal
+title: Terminal
 ---
 <div class="pb-2">
-  <h1 class="title title--h1 first-title title__separate">Terminal Emulator<span class="title--tone">.</span></h1>
-  <p class="portfolio-intro">Run console commands to query system assets directly from the terminal console.</p>
+  <h1 class="title title--h1 first-title title__separate">
+    <span lang="en">Terminal Emulator</span>
+    <span lang="es">Emulador de Terminal</span>
+    <span class="title--tone">.</span>
+  </h1>
+  <p class="portfolio-intro">
+    <span lang="en">Run console commands to query system assets directly from the terminal console.</span>
+    <span lang="es">Ejecute comandos de consola para consultar los recursos del sistema directamente desde la consola de terminal.</span>
+  </p>
 </div>
 
 <!-- Interactive Terminal Container -->
@@ -19,8 +26,11 @@ title: Interactive Operator Terminal
   </div>
   
   <div class="terminal-body" id="terminalBody">
-    <div class="terminal-output-line">Welcome to Operator Console Terminal (v1.0.0-beta)</div>
-    <div class="terminal-output-line">Type <span class="title--tone">help</span> to list all available system commands.</div>
+    <div class="terminal-output-line" lang="en">Welcome to Operator Console Terminal (v1.0.0-beta)</div>
+    <div class="terminal-output-line" lang="es">Bienvenido a la Terminal del Operador (v1.0.0-beta)</div>
+    
+    <div class="terminal-output-line" lang="en">Type <span class="title--tone">help</span> to list all available system commands.</div>
+    <div class="terminal-output-line" lang="es">Escriba <span class="title--tone">help</span> para listar los comandos disponibles.</div>
     <div class="terminal-output-line">&nbsp;</div>
   </div>
 
@@ -41,27 +51,59 @@ title: Interactive Operator Terminal
       input.focus();
     });
 
+    const getLang = () => document.documentElement.getAttribute('lang') || 'en';
+
     const commands = {
-      help: () => `Available commands:<br>
+      help: () => {
+        if (getLang() === 'es') {
+          return `Comandos disponibles:<br>
+  - <span class="title--tone">about</span>  : Imprimir detalles del operador<br>
+  - <span class="title--tone">skills</span> : Listar etiquetas de tecnologías clave<br>
+  - <span class="title--tone">date</span>   : Mostrar la hora actual del servidor<br>
+  - <span class="title--tone">theme</span>  : Alternar entre tema claro/oscuro<br>
+  - <span class="title--tone">social</span> : Imprimir enlaces de redes sociales activos<br>
+  - <span class="title--tone">clear</span>  : Limpiar la pantalla`;
+        }
+        return `Available commands:<br>
   - <span class="title--tone">about</span>  : Print operator details<br>
   - <span class="title--tone">skills</span> : List core tech stack tags<br>
   - <span class="title--tone">date</span>   : Display current time on server<br>
   - <span class="title--tone">theme</span>  : Toggle between light/dark theme<br>
   - <span class="title--tone">social</span> : Print active social links<br>
-  - <span class="title--tone">clear</span>  : Clear screen`,
+  - <span class="title--tone">clear</span>  : Clear screen`;
+      },
       
-      about: () => `Operator: {{ site.author.name }} {{ site.author.surname }}<br>
-Role: DevOps Cloud Engineer & Site Reliability Engineer (SRE)<br>
+      about: () => {
+        if (getLang() === 'es') {
+          return `Operador: {{ site.author.name }} {{ site.author.surname }}<br>
+Rol: Ingeniero Senior de DevSecOps y Plataforma<br>
+Zona Horaria: {{ site.author.timezone }}<br>
+Estado de Actividad: {{ site.author.status | upcase }}<br>
+Bio: Ingeniero de confiabilidad de plataformas con enfoque en AWS/Azure, clústeres de Kubernetes y automatización de infraestructura como código con Terraform.`;
+        }
+        return `Operator: {{ site.author.name }} {{ site.author.surname }}<br>
+Role: Senior DevSecOps & Platform Engineer<br>
 Timezone: {{ site.author.timezone }}<br>
 Uptime Status: {{ site.author.status | upcase }}<br>
-Bio: Platform reliability engineer focusing on AWS/GCP, Kubernetes clusters, and Terraform infrastructure-as-code automation templates.`,
+Bio: Platform reliability engineer focusing on AWS/Azure, Kubernetes clusters, and Terraform infrastructure-as-code automation.`;
+      },
       
-      skills: () => `Core Tools and Practices:<br>
-- Cloud Platforms: AWS, GCP, Alibaba Cloud<br>
-- Containers: Kubernetes (k8s), Docker, Helm<br>
-- IaC / Config: Terraform, Ansible, GitOps<br>
+      skills: () => {
+        if (getLang() === 'es') {
+          return `Herramientas y Prácticas Principales:<br>
+- Plataformas Cloud: AWS, Azure<br>
+- Contenedores: Kubernetes (k8s), Docker, Helm<br>
+- IaC / Configuración: Terraform, Ansible, GitOps (ArgoCD)<br>
 - Pipelines: GitHub Actions, GitLab CI, Jenkins<br>
-- Monitoring: Prometheus, Grafana, Thanos, Elastic Stack`,
+- Herramientas de Seguridad: SonarQube, OWASP ZAP, Snyk, Trivy`;
+        }
+        return `Core Tools and Practices:<br>
+- Cloud Platforms: AWS, Azure<br>
+- Containers: Kubernetes (k8s), Docker, Helm<br>
+- IaC / Config: Terraform, Ansible, GitOps (ArgoCD)<br>
+- Pipelines: GitHub Actions, GitLab CI, Jenkins<br>
+- Security Tools: SonarQube, OWASP ZAP, Snyk, Trivy`;
+      },
       
       date: () => new Date().toString(),
       
@@ -71,13 +113,31 @@ Bio: Platform reliability engineer focusing on AWS/GCP, Kubernetes clusters, and
         const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
         root.setAttribute('data-theme', nextTheme);
         localStorage.setItem('portfolio-theme', nextTheme);
-        return `Theme switched to: ${nextTheme.toUpperCase()}`;
+        
+        // Trigger theme label updates in main.js
+        const themeLabel = document.getElementById('themeLabel');
+        const mobileThemeLabel = document.getElementById('mobileThemeLabel');
+        const isDark = nextTheme === 'dark';
+        const isEs = getLang() === 'es';
+        const label = isEs ? (isDark ? 'Oscuro' : 'Claro') : (isDark ? 'Dark' : 'Light');
+        if (themeLabel) themeLabel.textContent = label;
+        if (mobileThemeLabel) mobileThemeLabel.textContent = label;
+
+        return getLang() === 'es' ? `Tema cambiado a: ${nextTheme.toUpperCase()}` : `Theme switched to: ${nextTheme.toUpperCase()}`;
       },
       
-      social: () => `Social assets linked:<br>
+      social: () => {
+        if (getLang() === 'es') {
+          return `Enlaces sociales activos:<br>
+- LinkedIn: <a href="{{ site.author.social.linkedin }}" target="_blank" class="about-portfolio-link">Perfil de LinkedIn</a><br>
+- GitHub  : <a href="{{ site.author.social.github }}" target="_blank" class="about-portfolio-link">Perfil de GitHub</a><br>
+- Credenciales: <a href="{{ site.author.social.certdirectory }}" target="_blank" class="about-portfolio-link">Perfil de Certificaciones</a>`;
+        }
+        return `Social assets linked:<br>
 - LinkedIn: <a href="{{ site.author.social.linkedin }}" target="_blank" class="about-portfolio-link">LinkedIn Profile</a><br>
 - GitHub  : <a href="{{ site.author.social.github }}" target="_blank" class="about-portfolio-link">GitHub Profile</a><br>
-- X       : <a href="{{ site.author.social.x }}" target="_blank" class="about-portfolio-link">X Handle</a>`,
+- Credentials: <a href="{{ site.author.social.certdirectory }}" target="_blank" class="about-portfolio-link">Certifications Profile</a>`;
+      },
       
       clear: () => {
         body.innerHTML = '';
@@ -105,10 +165,12 @@ Bio: Platform reliability engineer focusing on AWS/GCP, Kubernetes clusters, and
         if (commands[cleanCmd]) {
           result = commands[cleanCmd]();
         } else {
-          result = `command not found: ${value}. Type <span class="title--tone">help</span> for systems inventory.`;
+          result = getLang() === 'es' 
+            ? `comando no encontrado: ${value}. Escriba <span class="title--tone">help</span> para el catálogo del sistema.`
+            : `command not found: ${value}. Type <span class="title--tone">help</span> for systems inventory.`;
         }
 
-        // Print response if any (clear returns empty string but clears body)
+        // Print response if any
         if (result) {
           const resLine = document.createElement('div');
           resLine.className = 'terminal-output-line';

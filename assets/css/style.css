@@ -1817,3 +1817,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--c-muted);
   }
 }
+
+/* --- Multi-Language Toggle Rules --- */
+html:not([lang="es"]) [lang="es"] {
+  display: none !important;
+}
+html[lang="es"] [lang="en"] {
+  display: none !important;
+}

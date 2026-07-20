@@ -1,37 +1,59 @@
 ---
 layout: default
-title: Contact Operator
+title: Contact
 ---
 <div class="pb-2">
-  <h1 class="title title--h1 first-title title__separate">Contact Operator<span class="title--tone">.</span></h1>
-  <p class="portfolio-intro">Establish a secure connection. Fill out the console transmission form below to send a message.</p>
+  <h1 class="title title--h1 first-title title__separate">
+    <span lang="en">Contact Operator</span>
+    <span lang="es">Contactar Operador</span>
+    <span class="title--tone">.</span>
+  </h1>
+  <p class="portfolio-intro">
+    <span lang="en">Establish a secure connection. Fill out the console transmission form below to send a message.</span>
+    <span lang="es">Establezca una conexión segura. Complete el formulario de transmisión de la consola a continuación para enviar un mensaje.</span>
+  </p>
 </div>
 
 <section id="contact" class="reveal reveal-delay-2">
-  <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+  <form class="contact-form" action="https://formspree.io/f/{{ site.formspree_id | default: 'your-id' }}" method="POST">
     <div class="form-group">
-      <label for="form-name" class="form-label text-uppercase">Transmission Source (Name)</label>
+      <label for="form-name" class="form-label text-uppercase">
+        <span lang="en">Transmission Source (Name)</span>
+        <span lang="es">Origen de Transmisión (Nombre)</span>
+      </label>
       <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. John Doe" required>
     </div>
     
     <div class="form-group">
-      <label for="form-email" class="form-label text-uppercase">Return Address (Email)</label>
+      <label for="form-email" class="form-label text-uppercase">
+        <span lang="en">Return Address (Email)</span>
+        <span lang="es">Dirección de Retorno (Email)</span>
+      </label>
       <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. sender@example.com" required>
     </div>
 
     <div class="form-group">
-      <label for="form-subject" class="form-label text-uppercase">Protocol Subject</label>
+      <label for="form-subject" class="form-label text-uppercase">
+        <span lang="en">Protocol Subject</span>
+        <span lang="es">Asunto del Protocolo</span>
+      </label>
       <input type="text" id="form-subject" name="subject" class="form-input" placeholder="e.g. DevOps Consulting" required>
     </div>
 
     <div class="form-group">
-      <label for="form-message" class="form-label text-uppercase">Payload Message</label>
+      <label for="form-message" class="form-label text-uppercase">
+        <span lang="en">Payload Message</span>
+        <span lang="es">Mensaje del Payload</span>
+      </label>
       <textarea id="form-message" name="message" class="form-input form-textarea" rows="6" placeholder="Write your transmission contents here..." required></textarea>
     </div>
 
     <button type="submit" class="cv-btn cv-btn--header form-submit-btn">
       <span class="cv-btn__icon">⚡</span>
-      <span class="cv-btn__text">Send Payload</span>
+      <span class="cv-btn__text">
+        <span lang="en">Send Payload</span>
+        <span lang="es">Enviar Payload</span>
+      </span>
     </button>
   </form>
 </section>

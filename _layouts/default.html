@@ -15,12 +15,15 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-  <!-- Theme script (prevent flash of light/dark theme) -->
+  <!-- Theme & Language script (prevent flash) -->
   <script>
     (function() {
       const theme = localStorage.getItem('portfolio-theme') || 
                     (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       document.documentElement.setAttribute('data-theme', theme);
+      
+      const lang = localStorage.getItem('portfolio-lang') || 'en';
+      document.documentElement.setAttribute('lang', lang);
     })();
   </script>
 </head>

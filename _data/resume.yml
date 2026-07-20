@@ -1,241 +1,531 @@
 experience:
-  - position: "Senior System Engineer"
-    company: "EPAM"
-    location: "Bogotá, Colombia"
-    period: "April 2025 – Present"
-    duration: "1 yr 3 mo"
-    is_current: true
-    bullets:
-      - "Maintained and optimized the daily operation of critical infrastructure systems."
-      - "Designed and implemented Infrastructure as Code (IaC) using Terraform, developing reusable modules for AWS resources."
-      - "Managed and secured AWS workloads, including ECS, EKS, S3, and CloudFront distributions, ensuring compliance with security standards."
-      - "Developed and maintained CI/CD pipelines using Jenkins and GitHub Actions, incorporating automated testing and security scans."
-      - "Implemented and enforced security policies, including IAM role-based access and AWS GuardDuty for threat detection."
-      - "Collaborated with cross-functional teams to integrate security into DevOps pipelines, utilizing OWASP ZAP and SonarQube for automated vulnerability scans."
-      - "Monitored infrastructure using CloudWatch and Prometheus, creating actionable alerts for system health and performance."
-      - "Managed the full application lifecycle on Kubernetes clusters, including AWS EKS, by implementing GitOps principles with ArgoCD."
-      - "Created Event Driven Architectures using AWS Lambdas, SQS, EventBridge and StepFunctions."
-    tags: ["AWS", "Kubernetes", "Terraform", "Jenkins", "GitHub Actions", "ArgoCD", "GitOps", "Prometheus", "Lambda", "EventBridge"]
-
-  - position: "Senior DevSecOps Engineer"
-    company: "Hoag Memorial Hospital Presbyterian"
-    location: "Orange County, United States"
-    period: "January 2025 – April 2025"
-    duration: "4 mo"
-    is_current: false
-    bullets:
-      - "Maintained and optimized the daily operation of critical infrastructure systems."
-      - "Designed and implemented Infrastructure as Code (IaC) using Terraform, developing reusable modules for AWS resources."
-      - "Managed and secured AWS workloads, including ECS, EKS, S3, and CloudFront distributions, ensuring compliance with security standards."
-      - "Developed and maintained CI/CD pipelines using Jenkins and GitHub Actions, incorporating automated testing and security scans."
-      - "Implemented and enforced security policies, including IAM role-based access and AWS GuardDuty for threat detection."
-      - "Collaborated with cross-functional teams to integrate security into DevOps pipelines, utilizing OWASP ZAP and SonarQube for automated vulnerability scans."
-      - "Monitored infrastructure using CloudWatch and Prometheus, creating actionable alerts for system health and performance."
-      - "Created Event Driven Architectures using AWS Lambdas, SQS, EventBridge and StepFunctions."
-    tags: ["AWS", "Terraform", "Jenkins", "GitHub Actions", "Prometheus", "CloudWatch", "Lambda", "GuardDuty"]
-
-  - position: "Senior DevSecOps Engineer"
-    company: "Blank Factor"
-    location: "Bogotá, Colombia"
-    period: "August 2024 – January 2025"
-    duration: "6 mo"
-    is_current: false
-    bullets:
-      - "Maintained and optimized the daily operation of critical infrastructure systems."
-      - "Designed and implemented Infrastructure as Code (IaC) using Terraform, developing reusable modules for AWS resources."
-      - "Managed and secured AWS workloads, including ECS, EKS, S3, and CloudFront distributions, ensuring compliance with security standards."
-      - "Developed and maintained CI/CD pipelines using Jenkins and GitHub Actions, incorporating automated testing and security scans."
-      - "Implemented and enforced security policies, including IAM role-based access and AWS GuardDuty for threat detection."
-      - "Collaborated with cross-functional teams to integrate security into DevOps pipelines, utilizing OWASP ZAP and SonarQube for automated vulnerability scans."
-      - "Monitored infrastructure using CloudWatch and Prometheus, creating actionable alerts for system health and performance."
-      - "Created Event Driven Architectures using AWS Lambdas, SQS, EventBridge and StepFunctions."
-    tags: ["AWS", "Terraform", "Jenkins", "GitHub Actions", "SonarQube", "OWASP ZAP", "Lambda", "EventBridge"]
-
-  - position: "Security Manager"
-    company: "K2"
-    location: "Bogotá, Colombia"
-    period: "October 2023 – February 2025"
-    duration: "1 yr 5 mo"
-    is_current: false
-    bullets:
-      - "Defined and implemented advanced IaC for cloud and hybrid environments using Terraform."
-      - "Conducted advanced penetration testing on cloud and on-premise systems, identifying and mitigating vulnerabilities."
-      - "Automated security event analysis using Elastic Stack (ELK) and developed real-time monitoring dashboards."
-      - "Designed and implemented secure AWS environments, focusing on IAM policies, CloudTrail, and CloudFormation."
-      - "Developed comprehensive security documentation, including operational playbooks and incident response plans."
-    tags: ["AWS", "Terraform", "Penetration Testing", "ELK Stack", "CloudTrail", "CloudFormation", "IAM"]
-
-  - position: "DevOps Engineer"
-    company: "Koombea"
-    location: "Bogotá, Colombia"
-    period: "August 2022 – August 2024"
-    duration: "2 yrs"
-    is_current: false
-    bullets:
-      - "Automated infrastructure provisioning and configuration using Ansible and Terraform."
-      - "Deployed and managed containerized applications on Kubernetes, configuring Helm charts for workload optimization."
-      - "Configured and maintained CI/CD pipelines with Jenkins, implementing static code analysis and automated testing."
-      - "Designed scalable server architectures, ensuring high availability and fault tolerance across multiple environments."
-      - "Integrated AWS services like RDS, S3, and CloudFront for backend services and content delivery."
-      - "Conducted performance tuning and capacity planning for cloud-hosted applications."
-      - "Created Event Driven Architectures using AWS Lambdas, SQS, EventBridge and StepFunctions."
-    tags: ["Kubernetes", "Helm", "Ansible", "Terraform", "Jenkins", "AWS", "RDS", "CloudFront"]
-
-  - position: "Cloud Security Engineer"
-    company: "Territorium"
-    location: "Bogotá, Colombia"
-    period: "March 2022 – August 2023"
-    duration: "1 yr 5 mo"
-    is_current: false
-    bullets:
-      - "Performed penetration testing for web apps, APIs, and mobile apps, identifying vulnerabilities and recommending mitigations."
-      - "Conducted cloud penetration testing on AWS and Azure platforms, securing configurations and access controls."
-      - "Automated compliance checks using AWS Config and custom scripts in Python."
-      - "Defined and implemented security policies, integrating them with existing DevOps pipelines for continuous security assurance."
-    tags: ["AWS", "Azure", "Penetration Testing", "Python", "AWS Config", "Security Policies"]
-
-  - position: "Security Analyst I"
-    company: "Teleperformance"
-    location: "Bogotá, Colombia"
-    period: "March 2022 – August 2022"
-    duration: "6 mo"
-    is_current: false
-    bullets:
-      - "Designed and deployed secure CI/CD pipelines using Jenkins, integrating automated security tests."
-      - "Conducted security analysis of project architecture, ensuring compliance with best practices."
-      - "Automated application security testing using tools like OWASP ZAP and Burp Suite."
-      - "Implemented SecDevOps processes, combining security and DevOps for streamlined workflows."
-    tags: ["Jenkins", "OWASP ZAP", "Burp Suite", "CI/CD", "SecDevOps"]
-
-  - position: "Ethical Hacker Senior"
-    company: "AntiFraude CyberSecurity & Privacy Services LLC"
-    location: "Bogotá, Colombia"
-    period: "August 2021 – March 2022"
-    duration: "8 mo"
-    is_current: false
-    bullets:
-      - "Performed white box testing for web applications and cloud environments, identifying vulnerabilities in production systems."
-      - "Conducted OAST testing and ethical hacking assessments for AWS and on-prem infrastructures."
-      - "Supported the SecDevOps process by integrating vulnerability scanning tools into CI/CD pipelines."
-    tags: ["White Box Testing", "OAST", "Ethical Hacking", "AWS", "SecDevOps"]
-
-  - position: "Chief Information Security Officer"
-    company: "IMEXHS"
-    location: "Bogotá, Colombia"
-    period: "June 2021 – August 2021"
-    duration: "3 mo"
-    is_current: false
-    bullets:
-      - "Secured cloud platforms (AWS, Azure) by configuring policies and implementing best practices."
-      - "Reduced infrastructure costs through resource optimization and effective budget planning."
-      - "Conducted ethical hacking tests on patient and doctor portals, ensuring data integrity and compliance."
-    tags: ["AWS", "Azure", "CISO", "Budget Planning", "Cost Optimization"]
-
-  - position: "BlueTeam Engineer"
-    company: "TIVIT"
-    location: "Bogotá, Colombia"
-    period: "February 2021 – May 2021"
-    duration: "4 mo"
-    is_current: false
-    bullets:
-      - "Secured mission-critical assets through vulnerability analysis and ethical hacking on Azure environments."
-      - "Configured and maintained IaaS platforms, ensuring system reliability and uptime."
-    tags: ["Blue Team", "Vulnerability Analysis", "Azure", "IaaS", "System Reliability"]
-
-  - position: "Infrastructure Manager"
-    company: "Smart Taxi"
-    location: "Bogotá, Colombia"
-    period: "October 2020 – February 2021"
-    duration: "5 mo"
-    is_current: false
-    bullets:
-      - "Managed AWS infrastructure, configuring and maintaining servers and network components."
-      - "Conducted cost optimization and implemented security enhancements to reduce operational expenses."
-    tags: ["AWS", "Infrastructure Management", "Cost Optimization", "Security Enhancements"]
-
-  - position: "Cybersecurity Administrator"
-    company: "TIVIT"
-    location: "Bogotá, Colombia"
-    period: "November 2019 – September 2020"
-    duration: "11 mo"
-    is_current: false
-    bullets:
-      - "Automated tasks using Python, Bash, and PowerShell, increasing operational efficiency."
-      - "Managed vulnerability scanning tools like Tenable Nessus, Qualys, and Acunetix for security assurance."
-    tags: ["Python", "Bash", "PowerShell", "Vulnerability Scanning", "Nessus", "Qualys"]
-
-  - position: "SOC Analyst"
-    company: "TECNIHARDWARE"
-    location: "Barranquilla, Colombia"
-    period: "January 2017 – August 2018"
-    duration: "1 yr 8 mo"
-    is_current: false
-    bullets:
-      - "Implemented and maintained Windows and Linux servers, supporting critical business operations."
-      - "Responded to security incidents and escalated them to higher-level analysts as needed."
-    tags: ["SOC", "Security Incidents", "Linux", "Windows Server", "Monitoring"]
-
+- position: Senior System Engineer
+  company: EPAM
+  location: Bogotá, Colombia
+  period: April 2025 – Present
+  duration: 1 yr 3 mo
+  is_current: true
+  bullets: &id001
+  - Maintained and optimized the daily operation of critical infrastructure systems.
+  - Designed and implemented Infrastructure as Code (IaC) using Terraform, developing
+    reusable modules for AWS resources.
+  - Managed and secured AWS workloads, including ECS, EKS, S3, and CloudFront distributions,
+    ensuring compliance with security standards.
+  - Developed and maintained CI/CD pipelines using Jenkins and GitHub Actions, incorporating
+    automated testing and security scans.
+  - Implemented and enforced security policies, including IAM role-based access and
+    AWS GuardDuty for threat detection.
+  - Collaborated with cross-functional teams to integrate security into DevOps pipelines,
+    utilizing OWASP ZAP and SonarQube for automated vulnerability scans.
+  - Monitored infrastructure using CloudWatch and Prometheus, creating actionable
+    alerts for system health and performance.
+  - Managed the full application lifecycle on Kubernetes clusters, including AWS EKS,
+    by implementing GitOps principles with ArgoCD.
+  - Created Event Driven Architectures using AWS Lambdas, SQS, EventBridge and StepFunctions.
+  tags:
+  - AWS
+  - Kubernetes
+  - Terraform
+  - Jenkins
+  - GitHub Actions
+  - ArgoCD
+  - GitOps
+  - Prometheus
+  - Lambda
+  - EventBridge
+  position_en: Senior System Engineer
+  position_es: Ingeniero de Sistemas Senior
+  bullets_en: *id001
+  bullets_es:
+  - Mantuvo y optimizó la operación diaria de los sistemas de infraestructura crítica.
+  - Diseñó e implementó Infraestructura como Código (IaC) utilizando Terraform, desarrollando
+    módulos reutilizables para recursos de AWS.
+  - Administró y aseguró cargas de trabajo de AWS, incluyendo distribuciones de ECS,
+    EKS, S3 y CloudFront, garantizando el cumplimiento de los estándares de seguridad.
+  - Desarrolló y mantuvo pipelines de CI/CD utilizando Jenkins y GitHub Actions, incorporando
+    pruebas automatizadas y análisis de seguridad.
+  - Implementó y aplicó políticas de seguridad, incluyendo acceso basado en roles
+    de IAM y AWS GuardDuty para la detección de amenazas.
+  - Colaboró con equipos multifuncionales para integrar la seguridad en los pipelines
+    de DevOps, utilizando OWASP ZAP y SonarQube para análisis de vulnerabilidades
+    automatizados.
+  - Monitoreó la infraestructura utilizando CloudWatch y Prometheus, creando alertas
+    accionables para la salud y rendimiento del sistema.
+  - Administró todo el ciclo de vida de la aplicación en clústeres de Kubernetes,
+    incluyendo AWS EKS, mediante la implementación de principios de GitOps con ArgoCD.
+  - Creó Arquitecturas Orientadas a Eventos utilizando AWS Lambdas, SQS, EventBridge
+    y StepFunctions.
+- position: Senior DevSecOps Engineer
+  company: Hoag Memorial Hospital Presbyterian
+  location: Orange County, United States
+  period: January 2025 – April 2025
+  duration: 4 mo
+  is_current: false
+  bullets: &id002
+  - Maintained and optimized the daily operation of critical infrastructure systems.
+  - Designed and implemented Infrastructure as Code (IaC) using Terraform, developing
+    reusable modules for AWS resources.
+  - Managed and secured AWS workloads, including ECS, EKS, S3, and CloudFront distributions,
+    ensuring compliance with security standards.
+  - Developed and maintained CI/CD pipelines using Jenkins and GitHub Actions, incorporating
+    automated testing and security scans.
+  - Implemented and enforced security policies, including IAM role-based access and
+    AWS GuardDuty for threat detection.
+  - Collaborated with cross-functional teams to integrate security into DevOps pipelines,
+    utilizing OWASP ZAP and SonarQube for automated vulnerability scans.
+  - Monitored infrastructure using CloudWatch and Prometheus, creating actionable
+    alerts for system health and performance.
+  - Created Event Driven Architectures using AWS Lambdas, SQS, EventBridge and StepFunctions.
+  tags:
+  - AWS
+  - Terraform
+  - Jenkins
+  - GitHub Actions
+  - Prometheus
+  - CloudWatch
+  - Lambda
+  - GuardDuty
+  position_en: Senior DevSecOps Engineer
+  position_es: Ingeniero Senior de DevSecOps
+  bullets_en: *id002
+  bullets_es:
+  - Mantuvo y optimizó la operación diaria de los sistemas de infraestructura crítica.
+  - Diseñó e implementó Infraestructura como Código (IaC) utilizando Terraform, desarrollando
+    módulos reutilizables para recursos de AWS.
+  - Administró y aseguró cargas de trabajo de AWS, incluyendo distribuciones de ECS,
+    EKS, S3 y CloudFront, garantizando el cumplimiento de los estándares de seguridad.
+  - Desarrolló y mantuvo pipelines de CI/CD utilizando Jenkins y GitHub Actions, incorporando
+    pruebas automatizadas y análisis de seguridad.
+  - Implementó y aplicó políticas de seguridad, incluyendo acceso basado en roles
+    de IAM y AWS GuardDuty para la detección de amenazas.
+  - Colaboró con equipos multifuncionales para integrar la seguridad en los pipelines
+    de DevOps, utilizando OWASP ZAP y SonarQube para análisis de vulnerabilidades
+    automatizados.
+  - Monitoreó la infraestructura utilizando CloudWatch y Prometheus, creando alertas
+    accionables para la salud y rendimiento del sistema.
+  - Creó Arquitecturas Orientadas a Eventos utilizando AWS Lambdas, SQS, EventBridge
+    y StepFunctions.
+- position: Senior DevSecOps Engineer
+  company: Blank Factor
+  location: Bogotá, Colombia
+  period: August 2024 – January 2025
+  duration: 6 mo
+  is_current: false
+  bullets: &id003
+  - Maintained and optimized the daily operation of critical infrastructure systems.
+  - Designed and implemented Infrastructure as Code (IaC) using Terraform, developing
+    reusable modules for AWS resources.
+  - Managed and secured AWS workloads, including ECS, EKS, S3, and CloudFront distributions,
+    ensuring compliance with security standards.
+  - Developed and maintained CI/CD pipelines using Jenkins and GitHub Actions, incorporating
+    automated testing and security scans.
+  - Implemented and enforced security policies, including IAM role-based access and
+    AWS GuardDuty for threat detection.
+  - Collaborated with cross-functional teams to integrate security into DevOps pipelines,
+    utilizing OWASP ZAP and SonarQube for automated vulnerability scans.
+  - Monitored infrastructure using CloudWatch and Prometheus, creating actionable
+    alerts for system health and performance.
+  - Created Event Driven Architectures using AWS Lambdas, SQS, EventBridge and StepFunctions.
+  tags:
+  - AWS
+  - Terraform
+  - Jenkins
+  - GitHub Actions
+  - SonarQube
+  - OWASP ZAP
+  - Lambda
+  - EventBridge
+  position_en: Senior DevSecOps Engineer
+  position_es: Ingeniero Senior de DevSecOps
+  bullets_en: *id003
+  bullets_es:
+  - Mantuvo y optimizó la operación diaria de los sistemas de infraestructura crítica.
+  - Diseñó e implementó Infraestructura como Código (IaC) utilizando Terraform, desarrollando
+    módulos reutilizables para recursos de AWS.
+  - Administró y aseguró cargas de trabajo de AWS, incluyendo distribuciones de ECS,
+    EKS, S3 y CloudFront, garantizando el cumplimiento de los estándares de seguridad.
+  - Desarrolló y mantuvo pipelines de CI/CD utilizando Jenkins y GitHub Actions, incorporando
+    pruebas automatizadas y análisis de seguridad.
+  - Implementó y aplicó políticas de seguridad, incluyendo acceso basado en roles
+    de IAM y AWS GuardDuty para la detección de amenazas.
+  - Colaboró con equipos multifuncionales para integrar la seguridad en los pipelines
+    de DevOps, utilizando OWASP ZAP y SonarQube para análisis de vulnerabilidades
+    automatizados.
+  - Monitoreó la infraestructura utilizando CloudWatch y Prometheus, creando alertas
+    accionables para la salud y rendimiento del sistema.
+  - Creó Arquitecturas Orientadas a Eventos utilizando AWS Lambdas, SQS, EventBridge
+    y StepFunctions.
+- position: Security Manager
+  company: K2
+  location: Bogotá, Colombia
+  period: October 2023 – February 2025
+  duration: 1 yr 5 mo
+  is_current: false
+  bullets: &id004
+  - Defined and implemented advanced IaC for cloud and hybrid environments using Terraform.
+  - Conducted advanced penetration testing on cloud and on-premise systems, identifying
+    and mitigating vulnerabilities.
+  - Automated security event analysis using Elastic Stack (ELK) and developed real-time
+    monitoring dashboards.
+  - Designed and implemented secure AWS environments, focusing on IAM policies, CloudTrail,
+    and CloudFormation.
+  - Developed comprehensive security documentation, including operational playbooks
+    and incident response plans.
+  tags:
+  - AWS
+  - Terraform
+  - Penetration Testing
+  - ELK Stack
+  - CloudTrail
+  - CloudFormation
+  - IAM
+  position_en: Security Manager
+  position_es: Gerente de Seguridad
+  bullets_en: *id004
+  bullets_es:
+  - Definió e implementó IaC avanzado para entornos de nube e híbridos utilizando
+    Terraform.
+  - Realizó pruebas de penetración avanzadas en sistemas en la nube y locales, identificando
+    y mitigando vulnerabilidades.
+  - Automatizó el análisis de eventos de seguridad utilizando Elastic Stack (ELK)
+    y desarrolló tableros de monitoreo en tiempo real.
+  - Diseñó e implementó entornos seguros de AWS, enfocándose en políticas de IAM,
+    CloudTrail y CloudFormation.
+  - Desarrolló documentación de seguridad integral, incluyendo manuales operativos
+    y planes de respuesta a incidentes.
+- position: DevOps Engineer
+  company: Koombea
+  location: Bogotá, Colombia
+  period: August 2022 – August 2024
+  duration: 2 yrs
+  is_current: false
+  bullets: &id005
+  - Automated infrastructure provisioning and configuration using Ansible and Terraform.
+  - Deployed and managed containerized applications on Kubernetes, configuring Helm
+    charts for workload optimization.
+  - Configured and maintained CI/CD pipelines with Jenkins, implementing static code
+    analysis and automated testing.
+  - Designed scalable server architectures, ensuring high availability and fault tolerance
+    across multiple environments.
+  - Integrated AWS services like RDS, S3, and CloudFront for backend services and
+    content delivery.
+  - Conducted performance tuning and capacity planning for cloud-hosted applications.
+  - Created Event Driven Architectures using AWS Lambdas, SQS, EventBridge and StepFunctions.
+  tags:
+  - Kubernetes
+  - Helm
+  - Ansible
+  - Terraform
+  - Jenkins
+  - AWS
+  - RDS
+  - CloudFront
+  position_en: DevOps Engineer
+  position_es: Ingeniero de DevOps
+  bullets_en: *id005
+  bullets_es:
+  - Automatizó el aprovisionamiento y configuración de infraestructura utilizando
+    Ansible y Terraform.
+  - Desplegó y administró aplicaciones en contenedores en Kubernetes, configurando
+    charts de Helm para la optimización de cargas de trabajo.
+  - Configuró y mantuvo pipelines de CI/CD con Jenkins, implementando análisis estático
+    de código y pruebas automatizadas.
+  - Diseñó arquitecturas de servidores escalables, garantizando alta disponibilidad
+    y tolerancia a fallos en múltiples entornos.
+  - Integró servicios de AWS como RDS, S3 y CloudFront para servicios de backend y
+    entrega de contenido.
+  - Realizó ajustes de rendimiento y planificación de capacidad para aplicaciones
+    alojadas en la nube.
+  - Creó Arquitecturas Orientadas a Eventos utilizando AWS Lambdas, SQS, EventBridge
+    y StepFunctions.
+- position: Cloud Security Engineer
+  company: Territorium
+  location: Bogotá, Colombia
+  period: March 2022 – August 2023
+  duration: 1 yr 5 mo
+  is_current: false
+  bullets: &id006
+  - Performed penetration testing for web apps, APIs, and mobile apps, identifying
+    vulnerabilities and recommending mitigations.
+  - Conducted cloud penetration testing on AWS and Azure platforms, securing configurations
+    and access controls.
+  - Automated compliance checks using AWS Config and custom scripts in Python.
+  - Defined and implemented security policies, integrating them with existing DevOps
+    pipelines for continuous security assurance.
+  tags:
+  - AWS
+  - Azure
+  - Penetration Testing
+  - Python
+  - AWS Config
+  - Security Policies
+  position_en: Cloud Security Engineer
+  position_es: Ingeniero de Seguridad en la Nube
+  bullets_en: *id006
+  bullets_es:
+  - Realizó pruebas de penetración para aplicaciones web, APIs y aplicaciones móviles,
+    identificando vulnerabilidades y recomendando mitigaciones.
+  - Realizó pruebas de penetración en la nube en plataformas AWS y Azure, asegurando
+    configuraciones y controles de acceso.
+  - Automatizó comprobaciones de cumplimiento utilizando AWS Config y scripts personalizados
+    en Python.
+  - Definió e implementó políticas de seguridad, integrándolas con los pipelines de
+    DevOps existentes para un aseguramiento continuo de la seguridad.
+- position: Security Analyst I
+  company: Teleperformance
+  location: Bogotá, Colombia
+  period: March 2022 – August 2022
+  duration: 6 mo
+  is_current: false
+  bullets: &id007
+  - Designed and deployed secure CI/CD pipelines using Jenkins, integrating automated
+    security tests.
+  - Conducted security analysis of project architecture, ensuring compliance with
+    best practices.
+  - Automated application security testing using tools like OWASP ZAP and Burp Suite.
+  - Implemented SecDevOps processes, combining security and DevOps for streamlined
+    workflows.
+  tags:
+  - Jenkins
+  - OWASP ZAP
+  - Burp Suite
+  - CI/CD
+  - SecDevOps
+  position_en: Security Analyst I
+  position_es: Analista de Seguridad I
+  bullets_en: *id007
+  bullets_es:
+  - Diseñó y desplegó pipelines de CI/CD seguros utilizando Jenkins, integrando pruebas
+    de seguridad automatizadas.
+  - Realizó análisis de seguridad de la arquitectura del proyecto, garantizando el
+    cumplimiento de las mejores prácticas.
+  - Automatizó las pruebas de seguridad de aplicaciones utilizando herramientas como
+    OWASP ZAP y Burp Suite.
+  - Implementó procesos de SecDevOps, combinando seguridad y DevOps para flujos de
+    trabajo eficientes.
+- position: Ethical Hacker Senior
+  company: AntiFraude CyberSecurity & Privacy Services LLC
+  location: Bogotá, Colombia
+  period: August 2021 – March 2022
+  duration: 8 mo
+  is_current: false
+  bullets: &id008
+  - Performed white box testing for web applications and cloud environments, identifying
+    vulnerabilities in production systems.
+  - Conducted OAST testing and ethical hacking assessments for AWS and on-prem infrastructures.
+  - Supported the SecDevOps process by integrating vulnerability scanning tools into
+    CI/CD pipelines.
+  tags:
+  - White Box Testing
+  - OAST
+  - Ethical Hacking
+  - AWS
+  - SecDevOps
+  position_en: Ethical Hacker Senior
+  position_es: Hacker Ético Senior
+  bullets_en: *id008
+  bullets_es:
+  - Realizó pruebas de caja blanca para aplicaciones web y entornos de nube, identificando
+    vulnerabilidades en sistemas de producción.
+  - Realizó pruebas OAST y evaluaciones de hacking ético para infraestructuras AWS
+    y locales.
+  - Apoyó el proceso de SecDevOps mediante la integración de herramientas de escaneo
+    de vulnerabilidades en los pipelines de CI/CD.
+- position: Chief Information Security Officer
+  company: IMEXHS
+  location: Bogotá, Colombia
+  period: June 2021 – August 2021
+  duration: 3 mo
+  is_current: false
+  bullets: &id009
+  - Secured cloud platforms (AWS, Azure) by configuring policies and implementing
+    best practices.
+  - Reduced infrastructure costs through resource optimization and effective budget
+    planning.
+  - Conducted ethical hacking tests on patient and doctor portals, ensuring data integrity
+    and compliance.
+  tags:
+  - AWS
+  - Azure
+  - CISO
+  - Budget Planning
+  - Cost Optimization
+  position_en: Chief Information Security Officer
+  position_es: Director de Seguridad de la Información (CISO)
+  bullets_en: *id009
+  bullets_es:
+  - Aseguró plataformas de nube (AWS, Azure) configurando políticas e implementando
+    mejores prácticas.
+  - Redujo costos de infraestructura mediante la optimización de recursos y planificación
+    presupuestaria efectiva.
+  - Realizó pruebas de hacking ético en portales de pacientes y médicos, garantizando
+    la integridad de los datos y el cumplimiento normativo.
+- position: BlueTeam Engineer
+  company: TIVIT
+  location: Bogotá, Colombia
+  period: February 2021 – May 2021
+  duration: 4 mo
+  is_current: false
+  bullets: &id010
+  - Secured mission-critical assets through vulnerability analysis and ethical hacking
+    on Azure environments.
+  - Configured and maintained IaaS platforms, ensuring system reliability and uptime.
+  tags:
+  - Blue Team
+  - Vulnerability Analysis
+  - Azure
+  - IaaS
+  - System Reliability
+  position_en: BlueTeam Engineer
+  position_es: Ingeniero de Blue Team
+  bullets_en: *id010
+  bullets_es:
+  - Aseguró activos de misión crítica mediante análisis de vulnerabilidades y hacking
+    ético en entornos Azure.
+  - Configuró y mantuvo plataformas IaaS, garantizando la confiabilidad y el tiempo
+    de actividad del sistema.
+- position: Infrastructure Manager
+  company: Smart Taxi
+  location: Bogotá, Colombia
+  period: October 2020 – February 2021
+  duration: 5 mo
+  is_current: false
+  bullets: &id011
+  - Managed AWS infrastructure, configuring and maintaining servers and network components.
+  - Conducted cost optimization and implemented security enhancements to reduce operational
+    expenses.
+  tags:
+  - AWS
+  - Infrastructure Management
+  - Cost Optimization
+  - Security Enhancements
+  position_en: Infrastructure Manager
+  position_es: Gerente de Infraestructura
+  bullets_en: *id011
+  bullets_es:
+  - Administró la infraestructura de AWS, configurando y manteniendo servidores y
+    componentes de red.
+  - Realizó optimización de costos e implementó mejoras de seguridad para reducir
+    gastos operativos.
+- position: Cybersecurity Administrator
+  company: TIVIT
+  location: Bogotá, Colombia
+  period: November 2019 – September 2020
+  duration: 11 mo
+  is_current: false
+  bullets: &id012
+  - Automated tasks using Python, Bash, and PowerShell, increasing operational efficiency.
+  - Managed vulnerability scanning tools like Tenable Nessus, Qualys, and Acunetix
+    for security assurance.
+  tags:
+  - Python
+  - Bash
+  - PowerShell
+  - Vulnerability Scanning
+  - Nessus
+  - Qualys
+  position_en: Cybersecurity Administrator
+  position_es: Administrador de Ciberseguridad
+  bullets_en: *id012
+  bullets_es:
+  - Automatizó tareas utilizando Python, Bash y PowerShell, aumentando la eficiencia
+    operativa.
+  - Administró herramientas de escaneo de vulnerabilidades como Tenable Nessus, Qualys
+    y Acunetix para el aseguramiento de la seguridad.
+- position: SOC Analyst
+  company: TECNIHARDWARE
+  location: Barranquilla, Colombia
+  period: January 2017 – August 2018
+  duration: 1 yr 8 mo
+  is_current: false
+  bullets: &id013
+  - Implemented and maintained Windows and Linux servers, supporting critical business
+    operations.
+  - Responded to security incidents and escalated them to higher-level analysts as
+    needed.
+  tags:
+  - SOC
+  - Security Incidents
+  - Linux
+  - Windows Server
+  - Monitoring
+  position_en: SOC Analyst
+  position_es: Analista de SOC
+  bullets_en: *id013
+  bullets_es:
+  - Implementó y mantuvo servidores Windows y Linux, respaldando operaciones comerciales
+    críticas.
+  - Respondió a incidentes de seguridad y los escaló a analistas de nivel superior
+    según fue necesario.
 education:
-  - school: "Fundación Universitaria del Area Andina"
-    degree: "Systems Engineer"
-    focus: "Engineering degree in systems development and infrastructure"
-    period: "2023 – 2026"
-    type: "formal"
-    hours: ""
-
-  - school: "Servicio Nacional de Aprendizaje - SENA"
-    degree: "Technologist in Data Network Management"
-    focus: "Network design, management and routing topology"
-    period: "2016 – 2018"
-    type: "formal"
-    hours: ""
-
-  - school: "Colegio Francisco de Quevedo"
-    degree: "Academic Bachelor"
-    focus: "High school graduation"
-    period: "2010 – 2015"
-    type: "formal"
-    hours: ""
-
+- school: Fundación Universitaria del Area Andina
+  degree: Systems Engineer
+  focus: Engineering degree in systems development and infrastructure
+  period: 2023 – 2026
+  type: formal
+  hours: ''
+  degree_en: Systems Engineer
+  degree_es: Ingeniero de Sistemas
+  focus_en: Engineering degree in systems development and infrastructure
+  focus_es: Título de ingeniería en desarrollo de sistemas e infraestructura
+- school: Servicio Nacional de Aprendizaje - SENA
+  degree: Technologist in Data Network Management
+  focus: Network design, management and routing topology
+  period: 2016 – 2018
+  type: formal
+  hours: ''
+  degree_en: Technologist in Data Network Management
+  degree_es: Tecnólogo en Gestión de Redes de Datos
+  focus_en: Network design, management and routing topology
+  focus_es: Diseño, administración y topología de enrutamiento de redes de datos
+- school: Colegio Francisco de Quevedo
+  degree: Academic Bachelor
+  focus: High school graduation
+  period: 2010 – 2015
+  type: formal
+  hours: ''
+  degree_en: Academic Bachelor
+  degree_es: Bachiller Académico
+  focus_en: High school graduation
+  focus_es: Graduación de bachillerato académico
 core_skills:
-  - name: "DevSecOps & Shift-Left Security"
-    level: "95%"
-  - name: "Cloud Architecture (AWS & Azure)"
-    level: "90%"
-  - name: "Infrastructure as Code (Terraform & Ansible)"
-    level: "90%"
-  - name: "Kubernetes & Container Orchestration"
-    level: "85%"
-
+- name: DevSecOps & Shift-Left Security
+  level: 95%
+- name: Cloud Architecture (AWS & Azure)
+  level: 90%
+- name: Infrastructure as Code (Terraform & Ansible)
+  level: 90%
+- name: Kubernetes & Container Orchestration
+  level: 85%
 tooling:
-  - name: "AWS"
-  - name: "Azure"
-  - name: "Kubernetes"
-  - name: "Docker"
-  - name: "Terraform"
-  - name: "Ansible"
-  - name: "Puppet"
-  - name: "ArgoCD"
-  - name: "Jenkins"
-  - name: "GitHub Actions"
-  - name: "GitLab CI"
-  - name: "SonarQube"
-  - name: "OWASP ZAP"
-  - name: "Snyk"
-  - name: "Trivy"
-  - name: "Elastic Stack (ELK)"
-  - name: "Splunk"
-  - name: "Datadog"
-  - name: "Golang"
-  - name: "Python"
-  - name: "PowerShell"
-  - name: "Bash"
-  - name: "Linux (Debian, Ubuntu, CentOS, RedHat)"
-  - name: "Windows Server"
-  - name: "MITRE ATT&CK"
-  - name: "NIST"
-  - name: "CIS"
-  - name: "PCI-DSS"
-  - name: "HIPAA"
-  - name: "SOC2"
-  - name: "ISO 27001"
+- name: AWS
+- name: Azure
+- name: Kubernetes
+- name: Docker
+- name: Terraform
+- name: Ansible
+- name: Puppet
+- name: ArgoCD
+- name: Jenkins
+- name: GitHub Actions
+- name: GitLab CI
+- name: SonarQube
+- name: OWASP ZAP
+- name: Snyk
+- name: Trivy
+- name: Elastic Stack (ELK)
+- name: Splunk
+- name: Datadog
+- name: Golang
+- name: Python
+- name: PowerShell
+- name: Bash
+- name: Linux (Debian, Ubuntu, CentOS, RedHat)
+- name: Windows Server
+- name: MITRE ATT&CK
+- name: NIST
+- name: CIS
+- name: PCI-DSS
+- name: HIPAA
+- name: SOC2
+- name: ISO 27001

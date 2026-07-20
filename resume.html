@@ -3,7 +3,11 @@ layout: default
 title: Resume
 ---
 <div class="pb-2 reveal">
-  <h1 class="title title--h1 first-title title__separate">Resume<span class="title--tone">.</span></h1>
+  <h1 class="title title--h1 first-title title__separate">
+    <span lang="en">Resume</span>
+    <span lang="es">Trayectoria</span>
+    <span class="title--tone">.</span>
+  </h1>
 </div>
 
 <!-- Resume Section Tab Controls -->
@@ -15,17 +19,26 @@ title: Resume
     <span class="seg-control__seg-label">EDUC.</span>
   </button>
   <button class="seg-control__seg" role="tab" id="tab-core" aria-selected="false" onclick="switchResumeTab('core')">
-    <span class="seg-control__seg-label">CORE.</span>
+    <span class="seg-control__seg-label">
+      <span lang="en">CORE</span>
+      <span lang="es">NÚCLEO</span>
+    </span>
   </button>
   <button class="seg-control__seg" role="tab" id="tab-tool" aria-selected="false" onclick="switchResumeTab('tool')">
-    <span class="seg-control__seg-label">TOOL.</span>
+    <span class="seg-control__seg-label">
+      <span lang="en">TOOL.</span>
+      <span lang="es">HERRAM.</span>
+    </span>
   </button>
 </nav>
 
 <!-- Tab Content: Experience -->
 <div id="sect-exp" class="reveal reveal-delay-2 resume-tab-content">
   <section id="experience" class="exp-section">
-    <h2 class="section-title">◆ Experience</h2>
+    <h2 class="section-title">
+      <span lang="en">◆ Experience</span>
+      <span lang="es">◆ Experiencia Laboral</span>
+    </h2>
     <div class="exp-timeline">
       {% for job in site.data.resume.experience %}
         <article class="exp-card {% if job.is_current %}exp-card--current{% endif %}">
@@ -35,20 +48,40 @@ title: Resume
           </div>
           <div class="exp-card__content">
             {% if job.is_current %}
-              <div class="exp-card__badge">● Now</div>
+              <div class="exp-card__badge">
+                <span lang="en">● Now</span>
+                <span lang="es">● Actualmente</span>
+              </div>
             {% endif %}
             <div class="exp-card__header">
-              <h3 class="exp-card__position">{{ job.position }}</h3>
+              <h3 class="exp-card__position" lang="en">{{ job.position_en }}</h3>
+              <h3 class="exp-card__position" lang="es">{{ job.position_es }}</h3>
               <span class="exp-card__company">{{ job.company }}</span>
             </div>
             <div class="exp-card__meta">
               <span class="exp-card__meta-item">📍 {{ job.location }}</span>
               <span class="exp-card__meta-item sep">·</span>
-              <span class="exp-card__meta-item">{{ job.period }} <span class="exp-card__duration">· {{ job.duration }}</span></span>
+              <span class="exp-card__meta-item">
+                {{ job.period }} 
+                <span class="exp-card__duration">
+                  · 
+                  <span lang="en">{{ job.duration }}</span>
+                  <span lang="es">
+                    {{ job.duration | replace: 'yr', 'año' | replace: 'yrs', 'años' | replace: 'mo', 'mes' | replace: 'mos', 'meses' }}
+                  </span>
+                </span>
+              </span>
             </div>
-            <div class="exp-card__bullets">
+            <div class="exp-card__bullets" lang="en">
               <ul>
-                {% for bullet in job.bullets %}
+                {% for bullet in job.bullets_en %}
+                  <li class="exp-card__bullet">{{ bullet }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="exp-card__bullets" lang="es">
+              <ul>
+                {% for bullet in job.bullets_es %}
                   <li class="exp-card__bullet">{{ bullet }}</li>
                 {% endfor %}
               </ul>
@@ -68,7 +101,10 @@ title: Resume
 <!-- Tab Content: Education -->
 <div id="sect-educ" class="reveal reveal-delay-2 resume-tab-content" style="display: none;">
   <section id="education" class="edu-section">
-    <h2 class="section-title">◆ Education & Certifications</h2>
+    <h2 class="section-title">
+      <span lang="en">◆ Education</span>
+      <span lang="es">◆ Educación</span>
+    </h2>
     <div class="edu-timeline">
       {% for edu in site.data.resume.education %}
         <article class="edu-card {% if edu.type == 'formal' %}edu-card--formal{% else %}edu-card--cert{% endif %}">
@@ -89,13 +125,17 @@ title: Resume
           </div>
           <div class="edu-card__body">
             <h3 class="edu-card__title">{{ edu.school }}</h3>
-            <p class="edu-card__desc">{{ edu.degree }} | {{ edu.focus }}</p>
+            <p class="edu-card__desc" lang="en">{{ edu.degree_en }} | {{ edu.focus_en }}</p>
+            <p class="edu-card__desc" lang="es">{{ edu.degree_es }} | {{ edu.focus_es }}</p>
             <div class="edu-card__meta">
               <span class="edu-card__period">{{ edu.period }}</span>
               {% if edu.hours != "" %}
                 <span class="edu-card__hours"> · {{ edu.hours }}</span>
               {% endif %}
-              <span class="edu-card__type">{{ edu.type | capitalize }}</span>
+              <span class="edu-card__type">
+                <span lang="en">{{ edu.type | capitalize }}</span>
+                <span lang="es">{% if edu.type == 'formal' %}Formal{% else %}Certificación{% endif %}</span>
+              </span>
             </div>
           </div>
         </article>
@@ -107,12 +147,24 @@ title: Resume
 <!-- Tab Content: Core Skills -->
 <div id="sect-core" class="reveal reveal-delay-2 resume-tab-content" style="display: none;">
   <section id="core-competencies">
-    <h2 class="section-title">◆ Core Competencies</h2>
+    <h2 class="section-title">
+      <span lang="en">◆ Core Competencies</span>
+      <span lang="es">◆ Competencias Clave</span>
+    </h2>
     <div class="skills-grid">
       {% for skill in site.data.resume.core_skills %}
         <div class="skill-item">
           <div class="skill-item__info">
-            <span class="skill-item__name">{{ skill.name }}</span>
+            <span class="skill-item__name">
+              <span lang="en">{{ skill.name }}</span>
+              <span lang="es">
+                {% if skill.name == 'DevSecOps & Shift-Left Security' %}DevSecOps y Seguridad Shift-Left
+                {% elif skill.name == 'Cloud Architecture (AWS & Azure)' %}Arquitectura de Nube (AWS y Azure)
+                {% elif skill.name == 'Infrastructure as Code (Terraform & Ansible)' %}Infraestructura como Código (Terraform y Ansible)
+                {% elif skill.name == 'Kubernetes & Container Orchestration' %}Kubernetes y Orquestación de Contenedores
+                {% else %}{{ skill.name }}{% endif %}
+              </span>
+            </span>
             <span class="skill-item__percent">{{ skill.level }}</span>
           </div>
           <div class="skill-item__bar-bg">
@@ -127,7 +179,10 @@ title: Resume
 <!-- Tab Content: Tooling -->
 <div id="sect-tool" class="reveal reveal-delay-2 resume-tab-content" style="display: none;">
   <section id="tools">
-    <h2 class="section-title">◆ Tech Stack & Tools</h2>
+    <h2 class="section-title">
+      <span lang="en">◆ Tech Stack & Tools</span>
+      <span lang="es">◆ Tecnologías y Herramientas</span>
+    </h2>
     <div class="tools-grid">
       {% for tool in site.data.resume.tooling %}
         <span class="exp-card__tag tool-tag">{{ tool.name }}</span>
