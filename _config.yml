@@ -13,7 +13,7 @@ author:
   status: "available" # available, busy, offline
   timezone: "GMT-5"
   response_time: "<24h"
-  avatar: "https://media.licdn.com/dms/image/v2/C4E03AQHyMRtOZXSj_g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1606843737131?e=1785974400&v=beta&t=vVwgKF3jM0dXkMHnSkOuVBdRkGX3XHNVkfzT5pe-0hI"
+  avatar: "/assets/yo.jpeg"
   roles:
     - "Senior DevSecOps Engineer"
     - "Platform Engineer"
