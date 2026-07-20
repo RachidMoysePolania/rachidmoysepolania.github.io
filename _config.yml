@@ -1,34 +1,32 @@
 # Site settings
-title: "Operator Console — Portfolio"
-description: "Professional portfolio and system status operator dashboard replica."
-url: "https://username.github.io" # Change to your domain
-baseurl: "" # Change if hosting in a subdirectory e.g. "/portfolio"
+title: "Rachid Moyse Polania — DevSecOps & Platform Engineer Console"
+description: "Professional portfolio and system status operator dashboard for Rachid Moyse Polania."
+url: "https://rachidmoysepolania.github.io"
+baseurl: ""
 
 # Personal Information
 author:
-  name: "Your Name"
-  surname: "Surname"
+  name: "Rachid"
+  surname: "Moyse Polania"
   role_prefix: "operator/01"
-  email: "your.email@example.com"
+  email: "your.email@example.com" # Can be updated by user
   status: "available" # available, busy, offline
-  timezone: "GMT+1"
+  timezone: "GMT-5"
   response_time: "<24h"
-  avatar: "https://adityacprtm.dev/cdn-cgi/image/width=320,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png" # Place your image here
+  avatar: "https://media.licdn.com/dms/image/v2/C4E03AQHyMRtOZXSj_g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1606843737131?e=1785974400&v=beta&t=vVwgKF3jM0dXkMHnSkOuVBdRkGX3XHNVkfzT5pe-0hI"
   roles:
-    - "DevOps Cloud Engineer"
-    - "Site Reliability Engineer"
+    - "Senior DevSecOps Engineer"
     - "Platform Engineer"
-    - "Cloud Architect"
+    - "Cloud Security Architect"
+    - "Systems Engineer"
   social:
-    facebook: "https://facebook.com/username"
-    x: "https://x.com/username"
-    instagram: "https://instagram.com/username"
-    linkedin: "https://linkedin.com/in/username"
-    github: "https://github.com/username"
+    linkedin: "https://linkedin.com/in/rachid-moyse-polania" # Can be updated by user
+    github: "https://github.com/RachidMoysePolania"
+    x: "https://x.com/rachid"
 
 # Build settings
 markdown: kramdown
-theme: minima # standard jekyll minima theme configurations can be overridden or custom layout is used
+theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock

@@ -1,39 +1,79 @@
-- title: "Mini-Link — URL Shortener"
-  description: "Full-stack URL shortener built with MongoDB, Express, Vue.js, and Node.js (MEVN). Service discontinued."
+- title: "AWS Multi-Account Compliance Hardening"
+  description: "Designed and implemented secure landing zones and IAM roles complying with HIPAA and SOC 2 audits. Utilized CloudTrail, GuardDuty, and custom Python config checks."
   category: "projects"
-  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/minilink_2e6dd04774.png"
-  website: "https://link.adityacprtm.dev"
-  github: "https://github.com/Adityacprtm/mini-link"
-  tags: ["MongoDB", "Express", "Vue.js", "Node.js", "MEVN"]
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
+  website: "#"
+  github: "#"
+  tags: ["AWS", "IAM", "Compliance", "Python", "SOC 2", "HIPAA"]
 
-- title: "GCP Associate Cloud Engineer"
-  description: "Professional Google Cloud certification validating skills in deploying, monitoring, and managing GCP infrastructure and services."
+- title: "DevSecOps Shift-Left Pipeline Automation"
+  description: "Built automated pipeline checks inside GitHub Actions and GitLab CI, integrating SAST, DAST, and SCA scans using SonarQube, Snyk, and OWASP ZAP."
+  category: "projects"
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
+  website: "#"
+  github: "#"
+  tags: ["GitHub Actions", "Snyk", "SonarQube", "OWASP ZAP", "Security"]
+
+- title: "GitOps Application Lifecycle Management"
+  description: "Automated workloads and config releases on AWS EKS Kubernetes clusters using ArgoCD GitOps, Helm chart packaging, and Trivy image vulnerability scanners."
+  category: "projects"
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
+  website: "#"
+  github: "#"
+  tags: ["Kubernetes", "ArgoCD", "Helm", "Trivy", "AWS EKS"]
+
+- title: "AWS Solutions Architect - Associate"
+  description: "AWS Associate level certification validating key abilities to architect secure, resilient and high-performing systems."
   category: "certifications"
   image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
   website: "#"
   github: "#"
-  tags: ["GCP", "Cloud", "Associate Cloud Engineer"]
+  tags: ["AWS", "Solutions Architect", "Associate"]
 
-- title: "AWS Cloud Practitioner"
-  description: "Foundational AWS certification validating core cloud concepts, services, and pricing models. Issued by Amazon Web Services."
+- title: "Certified Kubernetes Administrator (CKA)"
+  description: "Validates the skills to install, configure, manage and troubleshoot production-grade Kubernetes container clusters."
   category: "certifications"
   image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
   website: "#"
   github: "#"
-  tags: ["AWS", "Cloud Practitioner"]
+  tags: ["Kubernetes", "CKA", "Containers"]
 
-- title: "TryHackMe Badge"
-  description: "Cybersecurity practice badges earned on TryHackMe, covering penetration testing, network security, and CTF challenges."
+- title: "Microsoft Azure Security Engineer Associate"
+  description: "Validates security capabilities on Microsoft Azure: managing identity, securing data, applications, and networks."
+  category: "certifications"
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
+  website: "#"
+  github: "#"
+  tags: ["Azure", "AZ-500", "Security Engineer"]
+
+- title: "HashiCorp Certified: Terraform Associate"
+  description: "Validates knowledge of infrastructure-as-code automation and Terraform operations."
+  category: "certifications"
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
+  website: "#"
+  github: "#"
+  tags: ["Terraform", "IaC", "HashiCorp"]
+
+- title: "FinOps Certified Engineer"
+  description: "Validates cloud financial management standards and cloud cost optimization principles."
+  category: "certifications"
+  image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
+  website: "#"
+  github: "#"
+  tags: ["FinOps", "Cloud Cost Optimization"]
+
+- title: "Certified Red Team Expert (CRTE)"
+  description: "Advanced certification validating professional active directory threat hunting, exploitation, and evasion."
   category: "badges"
   image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
   website: "#"
   github: "#"
-  tags: ["Security", "TryHackMe", "CTF"]
+  tags: ["Red Team", "CRTE", "Active Directory"]
 
-- title: "Static Asset Management"
-  description: "Managing static assets with AWS S3, Cloudflare CDN, and GitHub Actions."
-  category: "vibe coding"
+- title: "Certified Red Team Professional (CRTP)"
+  description: "Hands-on AD security training and penetration testing certification."
+  category: "badges"
   image: "https://adityacprtm.dev/cdn-cgi/image/width=640,format=auto,quality=85/https://r2.adityacprtm.dev/production/cb0ee630-8f2e-4687-a896-ee65e82086cb_imluhv_f28a4e.png"
   website: "#"
-  github: "https://github.com/Adityacprtm/static-asset-management"
-  tags: ["AWS", "S3", "Cloudflare", "GitHub Actions"]
+  github: "#"
+  tags: ["Red Team", "CRTP", "AD Exploits"]
